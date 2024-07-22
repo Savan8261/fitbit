@@ -1,9 +1,10 @@
 {
     "development": {
-      "username": "root",
-      "password": "Techuz@123",
-      "database": "fitbit",
-      "host": "127.0.0.1",
+      "username": "tailorg_fitbit",
+      "password": "Fitbit@123",
+      "database": "tailorg_fitbit",
+      "host": "tailorg.com",
+      "port":3306,
       "dialect": "mysql"
     },
     "test": {
