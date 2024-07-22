@@ -2,6 +2,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('../../config/config');
 const AppError = require("../../utils/appError");
+const { User } = require('../../database/models/index');
+
 
 // Dummy user store (replace with database calls)
 let users = [];
@@ -35,11 +37,13 @@ const AdminLogin = async (req, res, next) => {
   const { email, password } = req.body;
 
   try {
-    // Find user
-    const user = users.find((user) => user.email === email);
-    if (!user) {
+    // Find user with Email
+    const userFind = await User.findOne({ where: { email: email } });
+    if (!userFind) {
       return next(new AppError("Invalid credentials", 400));
     }
+    
+    const user = userFind.dataValues;
 
     // Compare password
     const isMatch = await bcrypt.compare(password, user.password);
