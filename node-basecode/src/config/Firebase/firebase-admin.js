@@ -16,7 +16,6 @@ const serviceAccount = {
 };
 
 
-
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   storageBucket: process.env.FIREBASE_URL || 'fitbit-ca9f5.appspot.com'
