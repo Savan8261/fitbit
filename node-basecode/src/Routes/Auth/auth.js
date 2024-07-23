@@ -10,7 +10,6 @@ const authMiddleware = require("../../middlewares/authMiddleware");
 // Auth Routes
 auth.post("/register", authController.AdminRegister);
 auth.post("/login",  authController.AdminLogin);
-auth.get("/logout", authMiddleware, authController.AdminLogout);
 auth.get("/check-auth", authMiddleware, authController.AdminAuthCheck);
 
 module.exports = auth;
