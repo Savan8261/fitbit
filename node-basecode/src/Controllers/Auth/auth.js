@@ -95,7 +95,8 @@ const AdminLogin = async (req, res, next) => {
       // httpOnly: true,  // if this option enable then can not access cookie directly by browser using javascript such as document.cookie
       secure: process.env.NODE_ENV === 'production', 
       sameSite: 'Strict', 
-      expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) 
+      expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+      domain : 'fitbit-pro.netlify.app'
     });
     
     res.status(200).json({ token });
