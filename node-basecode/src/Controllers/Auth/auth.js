@@ -85,12 +85,6 @@ const AdminLogin = async (req, res, next) => {
     // Generate JWT token
     const token = jwt.sign({ email: user.email }, config.jwtSecret, { expiresIn: config.jwtExpiry });
 
-    res.cookie('token', token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production', // Ensure cookies are secure in production
-      sameSite: 'None', // Ensure SameSite is set to None for cross-site cookies
-    });
-    
     res.status(200).json({ token });
   } catch (err) {
     console.error(err);
