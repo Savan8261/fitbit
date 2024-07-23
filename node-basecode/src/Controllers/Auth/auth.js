@@ -107,6 +107,5 @@ const AdminAuthCheck = (req, res, next) => {
 module.exports = {
   AdminRegister,
   AdminLogin,
-  AdminLogout,
   AdminAuthCheck
 };
