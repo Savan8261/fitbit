@@ -82,12 +82,12 @@ const AdminLogin = async (req, res, next) => {
       return next(new AppError("Invalid credentials", 400));
     } 
 
-    const jwtSecret = config.jwtSecret;
-    const jwtExpiry = config.jwtExpiry;
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production', 
+      sameSite: 'None',
+    });
 
-    if (!jwtSecret || !jwtExpiry) {
-      return next(new AppError("Not found", 400));
-    }
     // Generate JWT token
     const token = jwt.sign({ email: user.email }, config.jwtSecret, { expiresIn: config.jwtExpiry });
     
