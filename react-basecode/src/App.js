@@ -22,17 +22,6 @@ function App() {
 
         ></Route>
         <Route
-          path="/admin/register"
-          element={
-            <>
-              <AdminPageGuard>
-                <Register />
-              </AdminPageGuard>
-            </>
-          }
-          
-        ></Route>
-        <Route
           path="/admin/login"
           element={
             <AdminPageGuard>
