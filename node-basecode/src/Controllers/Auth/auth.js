@@ -82,20 +82,26 @@ const AdminLogin = async (req, res, next) => {
       return next(new AppError("Invalid credentials", 400));
     } 
 
-    res.cookie('token', token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production', 
-      sameSite: 'None',
-    });
-
     // Generate JWT token
     const token = jwt.sign({ email: user.email }, config.jwtSecret, { expiresIn: config.jwtExpiry });
+
+    res.cookie('token', token, {
+      // httpOnly: true,  // if this option enable then can not access cookie directly by browser using javascript such as document.cookie
+      secure: process.env.NODE_ENV === 'production', 
+      sameSite: 'Strict', 
+      expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) 
+    });
     
     res.status(200).json({ token });
   } catch (err) {
     console.error(err);
     next(err);
   }
+};
+
+const AdminLogout = (req, res, next) => {
+  res.clearCookie('token');
+  res.status(200).json({ msg: 'Logged out successfully' });
 };
 
 
@@ -107,5 +113,6 @@ const AdminAuthCheck = (req, res, next) => {
 module.exports = {
   AdminRegister,
   AdminLogin,
+  AdminLogout,
   AdminAuthCheck
 };
