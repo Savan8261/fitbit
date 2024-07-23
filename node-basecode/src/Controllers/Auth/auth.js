@@ -86,10 +86,9 @@ const AdminLogin = async (req, res, next) => {
     const token = jwt.sign({ email: user.email }, config.jwtSecret, { expiresIn: config.jwtExpiry });
 
     res.cookie('token', token, {
-      // httpOnly: true,  // if this option enable then can not access cookie directly by browser using javascript such as document.cookie
-      secure: process.env.NODE_ENV === 'production', 
-      sameSite: 'Strict', 
-      expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) 
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production', // Ensure cookies are secure in production
+      sameSite: 'None', // Ensure SameSite is set to None for cross-site cookies
     });
     
     res.status(200).json({ token });
