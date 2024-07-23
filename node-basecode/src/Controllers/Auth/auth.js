@@ -5,7 +5,6 @@ const AppError = require("../../utils/appError");
 const { User } = require('../../database/models/index');
 
 
-
 const AdminRegister = async (req, res, next) => {
   const checkEmailExist = await User.findOne({
     where: {
