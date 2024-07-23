@@ -13,12 +13,18 @@ const fs = require('fs');
 const globalErrorHandler = require("./src/middlewares/ErrorMiddleware");
 
 
-app.use(
-  cors({
-    origin: origin_urls,
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: origin_urls,
+//     credentials: true,
+//   })
+// );
+
+// use cors for origin urls
+app.use(cors({
+  origin: true,
+  credentials: true
+}));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

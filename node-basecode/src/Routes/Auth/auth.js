@@ -8,8 +8,8 @@ const authMiddleware = require("../../middlewares/authMiddleware");
 
 
 // Auth Routes
-auth.post("/register",  validateRegistration, validateRequest, authController.AdminRegister);
-auth.post("/login", rateLimiter, validateLogin, validateRequest, authController.AdminLogin);
+auth.post("/register", authController.AdminRegister);
+auth.post("/login",  authController.AdminLogin);
 auth.get("/logout", authMiddleware, authController.AdminLogout);
 auth.get("/check-auth", authMiddleware, authController.AdminAuthCheck);
 
