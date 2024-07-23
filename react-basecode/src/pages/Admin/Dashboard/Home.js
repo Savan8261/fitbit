@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect } from 'react'
+import axiosInstance from '../../../utils/axiosInstance';
 
 const Home = () => {
 
@@ -7,9 +8,7 @@ const Home = () => {
 
     const getUserData = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/user`, {
-          withCredentials: true,
-        });
+        const response = await axiosInstance.get('/user')
         console.log(response.data);
       } catch (error) {
         console.error(error);

@@ -17,9 +17,6 @@ const Login = () => {
         {
           email,
           password,
-        },
-        {
-          withCredentials: true, // Include credentials
         }
       );
       const token = response.data.token;
