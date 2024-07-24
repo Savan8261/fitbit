@@ -1,0 +1,26 @@
+import React from 'react'
+import Navigation from '../components/Navigation'
+import { Link } from 'react-router-dom'
+import ClassSchedule from '../components/ClassSchedule'
+import Footer from '../components/Footer'
+
+function Class() {
+    return (
+        <>
+            <Navigation />
+            <div className="container-fluid bg-primary p-5 bg-hero mb-5">
+                <div className="row py-5">
+                    <div className="col-12 text-center">
+                        <h1 className="display-2 text-uppercase text-white mb-md-4">Classes</h1>
+                        <Link to="/" className="btn btn-primary py-md-3 px-md-5 me-3">Home</Link>
+                        <Link to="/classes" className="btn btn-light py-md-3 px-md-5">Classes</Link>
+                    </div>
+                </div>
+            </div>
+            <ClassSchedule />
+            <Footer />
+        </>
+    )
+}
+
+export default Class
