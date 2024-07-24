@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import bodyImg from '../public/img/body.png'
+import weightlifting from '../public/img/weightlifting.png'
+import armImg from '../public/img/arm.png'
 const programData = [
     {
-        iconClass: '../public/img/body.png',
+        iconClass: bodyImg,
         title: "Body Building",
         description: "Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet"
     },
     {
-        iconClass: "../public/img/weightlifting.png",
+        iconClass: weightlifting,
         title: "Weight Lifting",
         description: "Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet"
     },
     {
-        iconClass: "../public/img/arm.png",
+        iconClass: armImg,
         title: "Muscle Building",
         description: "Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet"
     }

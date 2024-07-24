@@ -3,21 +3,24 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import team1 from '../public/img/team-1.jpg'
+import team2 from '../public/img/team-2.jpg'
+import team3 from '../public/img/team-3.jpg'
 const teamData = [
     {
         name: 'John Deo',
         role: 'Trainer',
-        imgSrc: '../public/img/team-1.jpg',
+        imgSrc: team1,
     },
     {
         name: 'James Taylor',
         role: 'Trainer',
-        imgSrc: '../public/img/team-2.jpg',
+        imgSrc: team2,
     },
     {
         name: 'Adam Phillips',
         role: 'Trainer',
-        imgSrc: '../public/img/team-3.jpg',
+        imgSrc: team3,
     }
 ];
 const TeamMember = ({ name, role, imgSrc }) => (

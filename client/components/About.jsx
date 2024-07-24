@@ -1,4 +1,5 @@
 import React from 'react'
+import aboutImg from '../public/img/about.jpg'
 
 function AboutJsx() {
     return (
@@ -6,7 +7,7 @@ function AboutJsx() {
             <div className="row gx-5">
                 <div className="col-lg-5 mb-5 mb-lg-0" style={{ minHeight: '500px' }}>
                     <div className="position-relative h-100">
-                        <img className="position-absolute w-100 h-100 rounded" src="../public/img/about.jpg" style={{ objectFit: 'cover' }} alt="About Gymster" />
+                        <img className="position-absolute w-100 h-100 rounded" src={aboutImg} style={{ objectFit: 'cover' }} alt="About Gymster" />
                     </div>
                 </div>
                 <div className="col-lg-7">
