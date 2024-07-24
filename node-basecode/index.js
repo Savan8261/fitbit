@@ -11,8 +11,13 @@ const routes = require("./src/Routes/index");
 const { origin_urls } = require("./src/config/uri");
 const fs = require("fs");
 const globalErrorHandler = require("./src/middlewares/ErrorMiddleware");
+const { configConsole } = require("./src/config/loggingConfig");
+const { scheduledLogFilesUpload } = require("./src/config/scheduledTask");
 
-// add log file
+//console configuration for getting logs record in file
+configConsole();
+//to upload logs file in firebase everyday.
+scheduledLogFilesUpload();
 
 app.use(
   cors({
