@@ -1,0 +1,123 @@
+[2024-07-24T11:58:44.412Z] app listening at http://localhost:8000
+[2024-07-24T11:58:47.646Z] Connection has been established successfully.
+[2024-07-24T11:59:49.000Z] app listening at http://localhost:8000
+[2024-07-24T11:59:52.430Z] Connection has been established successfully.
+[2024-07-24T12:00:24.280Z] {
+status: fail,
+message: Email already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Email already exist
+    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-24T12:11:26.254Z] app listening at http://localhost:8000
+[2024-07-24T12:11:29.218Z] Connection has been established successfully.
+[2024-07-24T12:11:30.735Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:74:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-24T12:11:53.653Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
+[2024-07-24T12:45:45.465Z] app listening at http://localhost:8000
+[2024-07-24T12:45:46.546Z] Connection has been established successfully.
+[2024-07-24T13:19:53.398Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
+[2024-07-24T13:20:17.672Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
+[2024-07-24T13:20:52.291Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
+[2024-07-24T13:21:08.866Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
+[2024-07-24T13:22:00.606Z] app listening at http://localhost:8000
+[2024-07-24T13:22:10.026Z] Connection has been established successfully.
+[2024-07-24T13:22:13.896Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
+[2024-07-24T13:22:29.389Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:74:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-24T13:22:36.636Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:82:19)
+}
