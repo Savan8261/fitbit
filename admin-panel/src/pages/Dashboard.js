@@ -44,7 +44,7 @@ const Dashboard = () => {
                 <span class="count">12</span>
             </NavLink>
             <NavLink to="#" class="profile">
-                <img src="/assets/img/logo.png" />
+                <img alt='img' src="/assets/img/logo.png" />
             </NavLink>
         </nav>
 
@@ -122,7 +122,7 @@ const Dashboard = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="/assets/img//profile-1.jpg" />
+                                    <img alt='img' src="/assets/img//profile-1.jpg" />
                                     <p>John Doe</p>
                                 </td>
                                 <td>14-08-2023</td>
@@ -130,7 +130,7 @@ const Dashboard = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/assets/img//profile-1.jpg" />
+                                    <img alt='img' src="/assets/img//profile-1.jpg" />
                                     <p>John Doe</p>
                                 </td>
                                 <td>14-08-2023</td>
@@ -138,7 +138,7 @@ const Dashboard = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/assets/img//profile-1.jpg" />
+                                    <img alt='img' src="/assets/img//profile-1.jpg" />
                                     <p>John Doe</p>
                                 </td>
                                 <td>14-08-2023</td>
