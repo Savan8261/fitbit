@@ -154,3 +154,8 @@ stack: Error: Invalid credentials
 }
 [2024-07-25T05:45:36.723Z] app listening at http://localhost:8000
 [2024-07-25T05:45:40.340Z] Connection has been established successfully.
+[2024-07-25T05:58:42.176Z] app listening at http://localhost:8000
+[2024-07-25T05:58:44.722Z] Connection has been established successfully.
+[2024-07-25T05:59:08.589Z] Log file uploaded successfully: https://storage.googleapis.com/fitbit-ca9f5.appspot.com/logs/2024-07-24-logs.log
+[2024-07-25T05:59:08.590Z] Log file uploaded to firebase.
+[2024-07-25T05:59:08.612Z] Log file deleted successfully: /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/config/logs/2024-07-24-logs.log
