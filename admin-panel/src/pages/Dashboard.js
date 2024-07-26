@@ -1,28 +1,29 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 const Dashboard = () => {
   return (
     <>
 
     <div class="sidebar">
-        <a href="#" class="logo">
+        <NavLink to="#" class="logo">
             <i class='bx bx-code-alt'></i>
             <div class="logo-name"><span>Asmr</span>Prog</div>
-        </a>
+        </NavLink>
         <ul class="side-menu">
-            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-            <li><a href="#"><i class='bx bx-store-alt'></i>Shop</a></li>
-            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
-            <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
-            <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
-            <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+            <li><NavLink to="#"><i class='bx bxs-dashboard'></i>Dashboard</NavLink></li>
+            <li><NavLink to="#"><i class='bx bx-store-alt'></i>Shop</NavLink></li>
+            <li class="active"><NavLink to="#"><i class='bx bx-analyse'></i>Analytics</NavLink></li>
+            <li><NavLink to="#"><i class='bx bx-message-square-dots'></i>Tickets</NavLink></li>
+            <li><NavLink to="#"><i class='bx bx-group'></i>Users</NavLink></li>
+            <li><NavLink to="#"><i class='bx bx-cog'></i>Settings</NavLink></li>
         </ul>
         <ul class="side-menu">
             <li>
-                <a href="#" class="logout">
+                <NavLink to="#" class="logout">
                     <i class='bx bx-log-out-circle'></i>
                     Logout
-                </a>
+                </NavLink>
             </li>
         </ul>
     </div>
@@ -38,13 +39,13 @@ const Dashboard = () => {
             </form>
             <input type="checkbox" id="theme-toggle" hidden />
             <label for="theme-toggle" class="theme-toggle"></label>
-            <a href="#" class="notif">
+            <NavLink to="#" class="notif">
                 <i class='bx bx-bell'></i>
                 <span class="count">12</span>
-            </a>
-            <a href="#" class="profile">
+            </NavLink>
+            <NavLink to="#" class="profile">
                 <img src="/assets/img/logo.png" />
-            </a>
+            </NavLink>
         </nav>
 
 
@@ -53,17 +54,17 @@ const Dashboard = () => {
                 <div class="left">
                     <h1>Dashboard</h1>
                     <ul class="breadcrumb">
-                        <li><a href="#">
+                        <li><NavLink to="#">
                                 Analytics
-                            </a></li>
+                            </NavLink></li>
                         /
-                        <li><a href="#" class="active">Shop</a></li>
+                        <li><NavLink to="#" class="active">Shop</NavLink></li>
                     </ul>
                 </div>
-                <a href="#" class="report">
+                <NavLink to="#" class="report">
                     <i class='bx bx-cloud-download'></i>
                     <span>Download CSV</span>
-                </a>
+                </NavLink>
             </div>
 
             <ul class="insights">
