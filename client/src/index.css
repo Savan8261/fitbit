@@ -3,7 +3,9 @@
   --secondary: #bdbdbf;
   --light: #f4f5f8;
   --dark: #222429;
+  --blue: #6863f2;
 }
+
 
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
@@ -150,10 +152,26 @@ h6,
   -moz-appearance: none;
   appearance: none;
   border-radius: 5px;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+/* SidebarMenuItem.css */
+.custom-icon-color .bi {
+  color: red; /* Change this to the desired color */
+}
+.icon-blue {
+  color: #6460b8;
+}
+
+.blue-button{
+  background-color: #6863f2 !important;
+  color: white !important;
 }
 
 @media (max-width: 991.98px) {

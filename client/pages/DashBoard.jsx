@@ -3,22 +3,12 @@ import Sidebar from "../components/Sidebar"
 
 export default function DashBoard() {
     return (
-        // <div className="d-flex ">
-        //     <div className="">
-        //         <Sidebar />
-        //     </div>
-        //     <div className="">
-
-        //         <Outlet />
-        //     </div>
-        // </div>
-
-        <div >
-            <div style={{ position: "fixed" }}>
+        <div className="d-flex flex vh-100">
+            <div className="position">
                 <Sidebar />
             </div>
-            <div style={{ width: "78%", float: "right", margin: "auto" }}>
-                <Outlet />
+            <div className="overflow-y-scroll w-100">
+            <Outlet />
             </div>
         </div >
 
