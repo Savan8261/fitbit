@@ -5,96 +5,101 @@ const Dashboard = () => {
   return (
     <>
 
-    <div class="sidebar">
-        <NavLink to="#" class="logo">
-            <i class='bx bx-code-alt'></i>
-            <div class="logo-name"><span>Asmr</span>Prog</div>
+    <div className="sidebar">
+        <NavLink to="#" >
+        <span className='logo'>
+            <i className='bx bx-code-alt'></i>
+            <div className="logo-name"><span>Asmr</span>Prog</div>
+        </span>
         </NavLink>
-        <ul class="side-menu">
-            <li><NavLink to="#"><i class='bx bxs-dashboard'></i>Dashboard</NavLink></li>
-            <li><NavLink to="#"><i class='bx bx-store-alt'></i>Shop</NavLink></li>
-            <li class="active"><NavLink to="#"><i class='bx bx-analyse'></i>Analytics</NavLink></li>
-            <li><NavLink to="#"><i class='bx bx-message-square-dots'></i>Tickets</NavLink></li>
-            <li><NavLink to="#"><i class='bx bx-group'></i>Users</NavLink></li>
-            <li><NavLink to="#"><i class='bx bx-cog'></i>Settings</NavLink></li>
+        <ul className="side-menu">
+            <li><NavLink to="#"><i className='bx bxs-dashboard'></i>Dashboard</NavLink></li>
+            <li><NavLink to="#"><i className='bx bx-store-alt'></i>Shop</NavLink></li>
+            <li className="active"><NavLink to="#"><i className='bx bx-analyse'></i>Analytics</NavLink></li>
+            <li><NavLink to="#"><i className='bx bx-message-square-dots'></i>Tickets</NavLink></li>
+            <li><NavLink to="#"><i className='bx bx-group'></i>Users</NavLink></li>
+            <li><NavLink to="#"><i className='bx bx-cog'></i>Settings</NavLink></li>
         </ul>
-        <ul class="side-menu">
+        <ul className="side-menu">
             <li>
-                <NavLink to="#" class="logout">
-                    <i class='bx bx-log-out-circle'></i>
+                <NavLink to="#" className="logout">
+                    <i className='bx bx-log-out-circle'></i>
                     Logout
                 </NavLink>
             </li>
         </ul>
     </div>
 
-    <div class="content">
+    <div className="content">
         <nav>
-            <i class='bx bx-menu'></i>
+            <i className='bx bx-menu'></i>
             <form action="#">
-                <div class="form-input">
+                <div className="form-input">
                     <input type="search" placeholder="Search..." />
-                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                    <button className="search-btn" type="submit"><i className='bx bx-search'></i></button>
                 </div>
             </form>
             <input type="checkbox" id="theme-toggle" hidden />
-            <label for="theme-toggle" class="theme-toggle"></label>
-            <NavLink to="#" class="notif">
-                <i class='bx bx-bell'></i>
-                <span class="count">12</span>
+            <label for="theme-toggle" className="theme-toggle"></label>
+            <NavLink to="#" className="notif">
+                <i className='bx bx-bell'></i>
+                <span className="count">12</span>
             </NavLink>
-            <NavLink to="#" class="profile">
+            <span className="profile">
+
+            <NavLink to="#" >
                 <img alt='img' src="/assets/img/logo.png" />
             </NavLink>
+            </span>
         </nav>
 
 
         <main>
-            <div class="header">
-                <div class="left">
+            <div className="header">
+                <div className="left">
                     <h1>Dashboard</h1>
-                    <ul class="breadcrumb">
+                    <ul className="breadcrumb">
                         <li><NavLink to="#">
                                 Analytics
                             </NavLink></li>
                         /
-                        <li><NavLink to="#" class="active">Shop</NavLink></li>
+                        <li><NavLink to="#" className="active">Shop</NavLink></li>
                     </ul>
                 </div>
-                <NavLink to="#" class="report">
-                    <i class='bx bx-cloud-download'></i>
+                <NavLink to="#" className="report">
+                    <i className='bx bx-cloud-download'></i>
                     <span>Download CSV</span>
                 </NavLink>
             </div>
 
-            <ul class="insights">
+            <ul className="insights">
                 <li>
-                    <i class='bx bx-calendar-check'></i>
-                    <span class="info">
+                    <i className='bx bx-calendar-check'></i>
+                    <span className="info">
                         <h3>
                             1,074
                         </h3>
                         <p>Paid Order</p>
                     </span>
                 </li>
-                <li><i class='bx bx-show-alt'></i>
-                    <span class="info">
+                <li><i className='bx bx-show-alt'></i>
+                    <span className="info">
                         <h3>
                             3,944
                         </h3>
                         <p>Site Visit</p>
                     </span>
                 </li>
-                <li><i class='bx bx-line-chart'></i>
-                    <span class="info">
+                <li><i className='bx bx-line-chart'></i>
+                    <span className="info">
                         <h3>
                             14,721
                         </h3>
                         <p>Searches</p>
                     </span>
                 </li>
-                <li><i class='bx bx-dollar-circle'></i>
-                    <span class="info">
+                <li><i className='bx bx-dollar-circle'></i>
+                    <span className="info">
                         <h3>
                             $6,742
                         </h3>
@@ -103,13 +108,13 @@ const Dashboard = () => {
                 </li>
             </ul>
 
-            <div class="bottom-data">
-                <div class="orders">
-                    <div class="header">
-                        <i class='bx bx-receipt'></i>
+            <div className="bottom-data">
+                <div className="orders">
+                    <div className="header">
+                        <i className='bx bx-receipt'></i>
                         <h3>Recent Orders</h3>
-                        <i class='bx bx-filter'></i>
-                        <i class='bx bx-search'></i>
+                        <i className='bx bx-filter'></i>
+                        <i className='bx bx-search'></i>
                     </div>
                     <table>
                         <thead>
@@ -126,7 +131,7 @@ const Dashboard = () => {
                                     <p>John Doe</p>
                                 </td>
                                 <td>14-08-2023</td>
-                                <td><span class="status completed">Completed</span></td>
+                                <td><span className="status completed">Completed</span></td>
                             </tr>
                             <tr>
                                 <td>
@@ -134,7 +139,7 @@ const Dashboard = () => {
                                     <p>John Doe</p>
                                 </td>
                                 <td>14-08-2023</td>
-                                <td><span class="status pending">Pending</span></td>
+                                <td><span className="status pending">Pending</span></td>
                             </tr>
                             <tr>
                                 <td>
@@ -142,40 +147,40 @@ const Dashboard = () => {
                                     <p>John Doe</p>
                                 </td>
                                 <td>14-08-2023</td>
-                                <td><span class="status process">Processing</span></td>
+                                <td><span className="status process">Processing</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="reminders">
-                    <div class="header">
-                        <i class='bx bx-note'></i>
+                <div className="reminders">
+                    <div className="header">
+                        <i className='bx bx-note'></i>
                         <h3>Remiders</h3>
-                        <i class='bx bx-filter'></i>
-                        <i class='bx bx-plus'></i>
+                        <i className='bx bx-filter'></i>
+                        <i className='bx bx-plus'></i>
                     </div>
-                    <ul class="task-list">
-                        <li class="completed">
-                            <div class="task-title">
-                                <i class='bx bx-check-circle'></i>
+                    <ul className="task-list">
+                        <li className="completed">
+                            <div className="task-title">
+                                <i className='bx bx-check-circle'></i>
                                 <p>Start Our Meeting</p>
                             </div>
-                            <i class='bx bx-dots-vertical-rounded'></i>
+                            <i className='bx bx-dots-vertical-rounded'></i>
                         </li>
-                        <li class="completed">
-                            <div class="task-title">
-                                <i class='bx bx-check-circle'></i>
+                        <li className="completed">
+                            <div className="task-title">
+                                <i className='bx bx-check-circle'></i>
                                 <p>Analyse Our Site</p>
                             </div>
-                            <i class='bx bx-dots-vertical-rounded'></i>
+                            <i className='bx bx-dots-vertical-rounded'></i>
                         </li>
-                        <li class="not-completed">
-                            <div class="task-title">
-                                <i class='bx bx-x-circle'></i>
+                        <li className="not-completed">
+                            <div className="task-title">
+                                <i className='bx bx-x-circle'></i>
                                 <p>Play Footbal</p>
                             </div>
-                            <i class='bx bx-dots-vertical-rounded'></i>
+                            <i className='bx bx-dots-vertical-rounded'></i>
                         </li>
                     </ul>
                 </div>
