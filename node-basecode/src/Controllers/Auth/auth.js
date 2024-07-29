@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../../config/config');
 const AppError = require("../../utils/appError");
 const { User } = require('../../database/models/index');
+const { Op } = require('sequelize');
 
 
 const AdminRegister = async (req, res, next) => {
@@ -66,6 +67,7 @@ const AdminRegister = async (req, res, next) => {
 
 const AdminLogin = async (req, res, next) => {
   const { email, password } = req.body;
+  console.log(email)
 
   try {
     // Find user with Email
