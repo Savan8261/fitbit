@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { v4 as uuidv4 } from 'uuid';
-
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
     const [countries, setCountries] = useState([]);
-
+    const { setUser } = useContext(AuthContext)
+    const navigate = useNavigate();
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
             .then(response => response.json())
@@ -35,8 +38,24 @@ const Signup = () => {
             .required("Password is required"),
     });
 
-    const handleSubmit = (values) => {
-        console.log({ ...values, uuid: uuidv4(), role: "2" });
+    const handleSubmit = async (values) => {
+        const response = await fetch("http://localhost:8000/auth/register", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values),
+        })
+        // console.log(response)
+        if (response.ok) {
+            alert("User registered successfully!")
+            const data = await response.json()
+            setUser(data)
+            navigate("/signin")
+
+        } else {
+            alert("Error registering user. Please try again.")
+        }
     };
 
     return (

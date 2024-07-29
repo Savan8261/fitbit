@@ -8,9 +8,9 @@ export default function DashBoard() {
                 <Sidebar />
             </div>
             <div className="overflow-y-scroll w-100">
-            <Outlet />
+                <Outlet />
             </div>
-        </div >
+        </div>
 
 
 

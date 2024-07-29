@@ -9,24 +9,27 @@ import DashBoard from '../pages/DashBoard'
 import Signin from '../pages/Signin'
 import Signup from '../pages/Signup'
 import Profile from '../pages/Profile'
+import { AuthProvider } from '../context/AuthProvider'
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='class' element={<Class />} />
-        <Route path='trainers' element={<TrainerPage />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='signin' element={<Signin />} />
-        <Route path='signup' element={<Signup />} />
+      <AuthProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='class' element={<Class />} />
+          <Route path='trainers' element={<TrainerPage />} />
+          <Route path='contact' element={<Contact />} />
+          <Route path='signin' element={<Signin />} />
+          <Route path='signup' element={<Signup />} />
 
-        <Route path='dashboard' element={<DashBoard />}>
-          <Route path='' element={<DashboardPage />} />
-          <Route path='profile' element={<Profile />} />
-        </Route>
-      </Routes>
+          <Route path='dashboard' element={<DashBoard />}>
+            <Route path='' element={<DashboardPage />} />
+            <Route path='profile' element={<Profile />} />
+          </Route>
+        </Routes>
+      </AuthProvider>
     </BrowserRouter>
   )
 }
