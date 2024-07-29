@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { useEffect, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { v4 as uuidv4 } from 'uuid';
+import axios from "axios";
 
 const Signup = () => {
     const [countries, setCountries] = useState([]);
-
+    const navigate = useNavigate();
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
             .then(response => response.json())
@@ -31,12 +32,21 @@ const Signup = () => {
         gender: Yup.string().required("Gender is required"),
         password: Yup.string()
             .min(8, "Password must be at least 8 characters long")
-            .matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, "Password must contain letters and numbers")
             .required("Password is required"),
     });
 
-    const handleSubmit = (values) => {
-        console.log({ ...values, uuid: uuidv4(), role: "2" });
+    const handleSubmit = async (values) => {
+        const data = { ...values, uuid: uuidv4(), role: "2" }
+        try {
+            const response = await axios.post(
+              `${import.meta.env.VITE_SERVER_URL}/user`,
+              data
+            );
+            const user = response.data.user;
+            navigate('/signin');
+          } catch (error) {
+            console.error(error);
+          }
     };
 
     return (
