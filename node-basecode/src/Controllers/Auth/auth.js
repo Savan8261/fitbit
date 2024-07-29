@@ -69,7 +69,7 @@ const AdminRegister = async (req, res, next) => {
 
 const AdminLogin = async (req, res, next) => {
   const { email, password } = req.body;
-  console.log(email)
+  console.log(email + " " + password)
 
   try {
     // Find user with Email
@@ -101,7 +101,7 @@ const AdminLogin = async (req, res, next) => {
     });
 
     // Send welcome email
-    new Email(user, url).sendWelcome();
+    new Email(user).sendWelcome();
 
     res.status(200).json({ token });
   } catch (err) {

@@ -147,3 +147,43 @@ stack: Error: Invalid credentials
 [2024-07-29T08:27:23.902Z] Connection has been established successfully.
 [2024-07-29T09:00:17.960Z] app listening at http://localhost:8000
 [2024-07-29T09:00:18.217Z] Connection has been established successfully.
+[2024-07-29T09:28:58.816Z] app listening at http://localhost:8000
+[2024-07-29T09:28:59.205Z] Connection has been established successfully.
+[2024-07-29T09:30:51.839Z] app listening at http://localhost:8000
+[2024-07-29T09:30:52.189Z] Connection has been established successfully.
+[2024-07-29T09:31:17.631Z] app listening at http://localhost:8000
+[2024-07-29T09:31:17.984Z] Connection has been established successfully.
+[2024-07-29T09:33:11.450Z] [object Object]
+[2024-07-29T09:33:11.690Z] ReferenceError: url is not defined
+[2024-07-29T09:33:11.692Z] {
+status: error,
+message: url is not defined,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: ReferenceError: url is not defined
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:104:21)
+}
+[2024-07-29T09:33:55.594Z] app listening at http://localhost:8000
+[2024-07-29T09:33:56.315Z] Connection has been established successfully.
+[2024-07-29T09:33:58.695Z] admin@gmail.com admin@123
+[2024-07-29T09:33:58.945Z] ReferenceError: url is not defined
+[2024-07-29T09:33:58.950Z] {
+status: error,
+message: url is not defined,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: ReferenceError: url is not defined
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:104:21)
+}
+[2024-07-29T09:36:26.577Z] app listening at http://localhost:8000
+[2024-07-29T09:36:26.748Z] Connection has been established successfully.
+[2024-07-29T09:36:28.937Z] admin@gmail.com admin@123
+[2024-07-29T09:36:50.493Z] app listening at http://localhost:8000
+[2024-07-29T09:36:50.674Z] Connection has been established successfully.
+[2024-07-29T09:39:29.627Z] admin@gmail.com admin@123
+[2024-07-29T09:40:02.982Z] app listening at http://localhost:8000
+[2024-07-29T09:40:03.196Z] Connection has been established successfully.

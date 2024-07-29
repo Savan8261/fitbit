@@ -42,7 +42,7 @@ function Signin() {
                                           secure: false,
                                           sameSite: 'Lax',
                                         });
-                                        navigate('/home');
+                                        navigate('/');
                                       } catch (error) {
                                         console.error(error);
                                       }
