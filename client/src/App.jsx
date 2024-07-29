@@ -9,6 +9,8 @@ import DashBoard from '../pages/DashBoard'
 import Signin from '../pages/Signin'
 import Signup from '../pages/Signup'
 import Profile from '../pages/Profile'
+import AdminPageGuard from './shared/guards/AdminPageGuard'
+import AdminAuthGuard from './shared/guards/AdminAuthGuard'
 
 function App() {
   return (
@@ -19,10 +21,10 @@ function App() {
         <Route path='class' element={<Class />} />
         <Route path='trainers' element={<TrainerPage />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='signin' element={<Signin />} />
-        <Route path='signup' element={<Signup />} />
+        <Route path='signin' element={<AdminPageGuard><Signin /></AdminPageGuard>} />
+        <Route path='signup' element={<AdminPageGuard><Signup /></AdminPageGuard>} />
 
-        <Route path='dashboard' element={<DashBoard />}>
+        <Route path='dashboard' element={<AdminAuthGuard><DashBoard /></AdminAuthGuard>}>
           <Route path='' element={<DashboardPage />} />
           <Route path='profile' element={<Profile />} />
         </Route>
