@@ -14,6 +14,7 @@ const fs = require("fs");
 const globalErrorHandler = require("./src/middlewares/ErrorMiddleware");
 const { configConsole } = require("./src/config/loggingConfig");
 const { scheduledLogFilesUpload } = require("./src/config/scheduledTask");
+const path = require("path");
 
 //console configuration for getting logs record in file
 configConsole();
@@ -22,6 +23,7 @@ scheduledLogFilesUpload();
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "src", "utils", "mailer", "templates"));
+
 
 app.use(
   cors({
