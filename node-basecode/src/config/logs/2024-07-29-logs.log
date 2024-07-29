@@ -143,3 +143,5 @@ stack: Error: Invalid credentials
     at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:93:19)
 }
 [2024-07-29T06:55:08.651Z] abcbca
+[2024-07-29T08:27:23.547Z] app listening at http://localhost:8000
+[2024-07-29T08:27:23.902Z] Connection has been established successfully.
