@@ -4,6 +4,9 @@ const config = require("../../config/config");
 const AppError = require("../../utils/appError");
 const { User } = require("../../database/models/index");
 const Email = require("../../utils/email");
+const { Op } = require('sequelize');
+
+
 
 const AdminRegister = async (req, res, next) => {
   const checkEmailExist = await User.findOne({
@@ -66,15 +69,25 @@ const AdminRegister = async (req, res, next) => {
 
 const AdminLogin = async (req, res, next) => {
   const { email, password } = req.body;
+  console.log(email)
 
   try {
     // Find user with Email
-    const userFind = await User.findOne({ where: { email: email } });
+
+    
+    const userFind = await User.findOne({
+      where: {
+        [Op.or]: [
+          { email: email },
+          { username: email }
+        ]
+      }
+    });
     if (!userFind) {
       return next(new AppError("Invalid credentials", 400));
     }
-
-    const user = userFind.dataValues;
+    
+    const user = userFind.dataValues;    
 
     // Compare password
     const isMatch = await bcrypt.compare(password, user.password);
