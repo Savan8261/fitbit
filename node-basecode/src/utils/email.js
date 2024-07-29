@@ -3,10 +3,9 @@ const ejs = require("ejs");
 const htmlToText = require("html-to-text");
 
 module.exports = class Email {
-  constructor(user, url) {
+  constructor(user) {
     this.to = user.email;
     this.firstName = user.firstName;
-    this.url = url;
     this.from = "Admin <admin@email.com>";
   }
 
@@ -27,7 +26,6 @@ module.exports = class Email {
     // 1) Render HTML based on a ejs templatePath
     const html = await ejs.renderFile(templatePath, {
       firstName: this.firstName,
-      url: this.url,
       subject,
     });
 

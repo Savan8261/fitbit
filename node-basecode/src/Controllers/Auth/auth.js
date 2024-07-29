@@ -88,7 +88,6 @@ const AdminLogin = async (req, res, next) => {
     });
 
     // Send welcome email
-    const url = `${req.protocol}://${req.get("host")}/dashboard`;
     new Email(user, url).sendWelcome();
 
     res.status(200).json({ token });
