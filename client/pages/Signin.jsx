@@ -37,6 +37,8 @@ function Signin() {
                                           values
                                         );
                                         const token = response.data.token;
+                                        const user = response.data.user;
+                                        localStorage.setItem("user", user)
                                         Cookies.set('token', token, {
                                           expires: 7,
                                           path: '/',
