@@ -11,6 +11,7 @@ import Signup from '../pages/Signup'
 import Profile from '../pages/Profile'
 import AdminPageGuard from './shared/guards/AdminPageGuard'
 import AdminAuthGuard from './shared/guards/AdminAuthGuard'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (

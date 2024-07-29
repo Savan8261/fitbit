@@ -8,7 +8,6 @@ import Cookies from 'js-cookie';
 // Validation schema
 const validationSchema = Yup.object({
     email: Yup.string()
-        .email("Invalid email address")
         .required("Required"),
     password: Yup.string()
         .min(6, "Password must be at least 6 characters")
@@ -55,13 +54,13 @@ function Signin() {
                                     <Form>
                                         <div className="form-floating mb-3">
                                             <Field
-                                                type="email"
+                                                type="text"
                                                 name="email"
                                                 className="form-control"
                                                 id="floatingInput"
                                                 placeholder="name@example.com"
                                             />
-                                            <label htmlFor="floatingInput">Email address</label>
+                                            <label htmlFor="floatingInput">Email address Or username</label>
                                             <ErrorMessage name="email" component="div" className="text-danger" />
                                         </div>
                                         <div className="form-floating mb-3">

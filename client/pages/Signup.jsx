@@ -5,6 +5,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { v4 as uuidv4 } from 'uuid';
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Signup = () => {
     const [countries, setCountries] = useState([]);
@@ -45,6 +46,7 @@ const Signup = () => {
             const user = response.data.user;
             navigate('/signin');
           } catch (error) {
+            toast.error(error?.response?.data?.message || error?.message || error);
             console.error(error);
           }
     };
@@ -212,6 +214,8 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
+
         </>
     );
 }
