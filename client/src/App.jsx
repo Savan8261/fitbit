@@ -9,13 +9,17 @@ import DashBoard from '../pages/DashBoard'
 import Signin from '../pages/Signin'
 import Signup from '../pages/Signup'
 import Profile from '../pages/Profile'
+import { AuthProvider } from '../context/AuthProvider'
 import AdminPageGuard from './shared/guards/AdminPageGuard'
 import AdminAuthGuard from './shared/guards/AdminAuthGuard'
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function App() {
   return (
     <BrowserRouter>
+      <AuthProvider>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
@@ -30,6 +34,7 @@ function App() {
           <Route path='profile' element={<Profile />} />
         </Route>
       </Routes>
+      </AuthProvider>
     </BrowserRouter>
   )
 }

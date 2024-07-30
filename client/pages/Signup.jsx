@@ -4,11 +4,16 @@ import { useEffect, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { v4 as uuidv4 } from 'uuid';
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 
 const Signup = () => {
     const [countries, setCountries] = useState([]);
+    const { setUser } = useContext(AuthContext)
+
     const navigate = useNavigate();
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
@@ -37,6 +42,7 @@ const Signup = () => {
     });
 
     const handleSubmit = async (values) => {
+
         const data = { ...values, uuid: uuidv4(), role: "2" }
         try {
             const response = await axios.post(
@@ -44,6 +50,7 @@ const Signup = () => {
               data
             );
             const user = response.data.user;
+            setUser(user)
             navigate('/signin');
           } catch (error) {
             toast.error(error?.response?.data?.message || error?.message || error);

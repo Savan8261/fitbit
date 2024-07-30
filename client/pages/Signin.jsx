@@ -2,20 +2,23 @@ import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Cookies from 'js-cookie';
 
-// Validation schema
 const validationSchema = Yup.object({
     email: Yup.string()
-        .required("Required"),
+        .required("Email is required"),
     password: Yup.string()
-        .min(6, "Password must be at least 6 characters")
-        .required("Required"),
+        .required("Password is required")
 });
 
 function Signin() {
+    const { setUser } = useContext(AuthContext)
     const navigate = useNavigate();
+
+
     return (
         <>
             <Navigation />
@@ -36,8 +39,9 @@ function Signin() {
                                           values
                                         );
                                         const token = response.data.token;
-                                        const user = response.data.user;
-                                        localStorage.setItem("user", user)
+                                    
+                                        localStorage.setItem("token", token);
+                                        setUser(response.data.user)
                                         Cookies.set('token', token, {
                                           expires: 7,
                                           path: '/',
@@ -46,7 +50,7 @@ function Signin() {
                                         });
                                         navigate('/');
                                       } catch (error) {
-                                        console.error(error);
+                                                    alert("Invalid credentials")
                                       }
                                 }}
                             >
@@ -60,6 +64,7 @@ function Signin() {
                                                 id="floatingInput"
                                                 placeholder="name@example.com"
                                             />
+
                                             <label htmlFor="floatingInput">Email address Or username</label>
                                             <ErrorMessage name="email" component="div" className="text-danger" />
                                         </div>
@@ -74,10 +79,12 @@ function Signin() {
                                             <label htmlFor="floatingPassword">Password</label>
                                             <ErrorMessage name="password" component="div" className="text-danger" />
                                         </div>
+
                                         <div className="form-check mb-3">
                                             <Field
                                                 type="checkbox"
-                                                name="remember"
+                                                name="rememberMe"
+
                                                 className="form-check-input"
                                                 id="rememberPasswordCheck"
                                             />
@@ -102,7 +109,8 @@ function Signin() {
                                         </div>
                                         <div className="d-flex mt-3 align-items-center gap-2">
                                             <p className="m-0">Don't have an account?</p>
-                                            <Link to="/signup">Sign up</Link>
+                                            <Link to='/signup'>signup</Link>
+
                                         </div>
                                     </Form>
                                 )}
