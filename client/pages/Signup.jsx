@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { useEffect, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -7,9 +7,13 @@ import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+
 const Signup = () => {
     const [countries, setCountries] = useState([]);
     const { setUser } = useContext(AuthContext)
+
     const navigate = useNavigate();
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
@@ -34,28 +38,24 @@ const Signup = () => {
         gender: Yup.string().required("Gender is required"),
         password: Yup.string()
             .min(8, "Password must be at least 8 characters long")
-            .matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, "Password must contain letters and numbers")
             .required("Password is required"),
     });
 
     const handleSubmit = async (values) => {
-        const response = await fetch("http://localhost:8000/auth/register", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(values),
-        })
-        // console.log(response)
-        if (response.ok) {
-            alert("User registered successfully!")
-            const data = await response.json()
-            setUser(data)
-            navigate("/signin")
 
-        } else {
-            alert("Error registering user. Please try again.")
-        }
+        const data = { ...values, uuid: uuidv4(), role: "2" }
+        try {
+            const response = await axios.post(
+              `${import.meta.env.VITE_SERVER_URL}/user`,
+              data
+            );
+            const user = response.data.user;
+            setUser(user)
+            navigate('/signin');
+          } catch (error) {
+            toast.error(error?.response?.data?.message || error?.message || error);
+            console.error(error);
+          }
     };
 
     return (
@@ -221,6 +221,8 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
+
         </>
     );
 }

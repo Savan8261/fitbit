@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 const validationSchema = Yup.object({
     email: Yup.string()
-        .email("Invalid email address")
         .required("Email is required"),
     password: Yup.string()
         .required("Password is required")
@@ -17,26 +18,6 @@ function Signin() {
     const { setUser } = useContext(AuthContext)
     const navigate = useNavigate();
 
-    const handleSubmit = async (values) => {
-        // Handle form submission here
-        console.log(values);
-        const responce = await fetch("http://localhost:8000/auth/login", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(values)
-        })
-        if (responce.ok) {
-            const data = await responce.json()
-            localStorage.setItem("token", data.token);
-            setUser(data.user)
-            navigate("/dashboard")
-        }
-        else {
-            alert("Invalid credentials")
-        }
-    };
 
     return (
         <>
@@ -47,21 +28,44 @@ function Signin() {
                         <div className="card-body p-4 p-sm-5">
                             <h5 className="card-title text-center mb-5 fw-bold fs-3 text-dark">Sign In</h5>
                             <Formik
-                                initialValues={{ email: '', password: '' }}
+                                initialValues={{ email: "", password: "", remember: false }}
                                 validationSchema={validationSchema}
-                                onSubmit={handleSubmit}
+                                onSubmit={ async (values) => {
+                                    console.log(values);
+                                    try {
+                                        console.log(import.meta.env.VITE_SERVER_URL)
+                                        const response = await axios.post(
+                                          `${import.meta.env.VITE_SERVER_URL}/auth/login`,
+                                          values
+                                        );
+                                        const token = response.data.token;
+                                    
+                                        localStorage.setItem("token", token);
+                                        setUser(response.data.user)
+                                        Cookies.set('token', token, {
+                                          expires: 7,
+                                          path: '/',
+                                          secure: false,
+                                          sameSite: 'Lax',
+                                        });
+                                        navigate('/');
+                                      } catch (error) {
+                                                    alert("Invalid credentials")
+                                      }
+                                }}
                             >
                                 {({ isSubmitting }) => (
                                     <Form>
                                         <div className="form-floating mb-3">
                                             <Field
-                                                type="email"
+                                                type="text"
                                                 name="email"
                                                 className="form-control"
                                                 id="floatingInput"
                                                 placeholder="name@example.com"
                                             />
-                                            <label htmlFor="floatingInput">Email address</label>
+
+                                            <label htmlFor="floatingInput">Email address Or username</label>
                                             <ErrorMessage name="email" component="div" className="text-danger" />
                                         </div>
                                         <div className="form-floating mb-3">
@@ -80,6 +84,7 @@ function Signin() {
                                             <Field
                                                 type="checkbox"
                                                 name="rememberMe"
+
                                                 className="form-check-input"
                                                 id="rememberPasswordCheck"
                                             />
@@ -88,7 +93,11 @@ function Signin() {
                                             </label>
                                         </div>
                                         <div className="d-grid">
-                                            <button className="btn btn-primary btn-login text-uppercase fw-bold" type="submit" disabled={isSubmitting}>
+                                            <button
+                                                className="btn btn-primary btn-login text-uppercase fw-bold"
+                                                type="submit"
+                                                disabled={isSubmitting}
+                                            >
                                                 Sign in
                                             </button>
                                         </div>
@@ -101,6 +110,7 @@ function Signin() {
                                         <div className="d-flex mt-3 align-items-center gap-2">
                                             <p className="m-0">Don't have an account?</p>
                                             <Link to='/signup'>signup</Link>
+
                                         </div>
                                     </Form>
                                 )}
