@@ -5,9 +5,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
-import { AuthContext } from "../context/AuthProvider";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { AuthContext } from "../context/AuthProvider";import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 
 const Signup = () => {

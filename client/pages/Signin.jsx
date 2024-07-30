@@ -4,8 +4,8 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Cookies from 'js-cookie'
 
 const validationSchema = Yup.object({
     email: Yup.string()

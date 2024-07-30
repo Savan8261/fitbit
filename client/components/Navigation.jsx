@@ -1,6 +1,15 @@
+import { useContext } from "react"
 import { Link } from "react-router-dom"
+import { AuthContext } from "../context/AuthProvider"
+import Cookies from 'js-cookie'
 
 const Navigation = () => {
+    const { user, setUser } = useContext(AuthContext)
+    const logout = () => {
+        setUser(null);
+        localStorage.removeItem("token");
+        Cookies.remove('token');
+    }
     return (
         <div className="container-fluid bg-dark px-0">
             <div className="row gx-0">
@@ -64,7 +73,11 @@ const Navigation = () => {
                                 </div>
                                 <Link to="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <Link to="/signin" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</Link>
+                            {
+                                user == null ? 
+                                <Link to="/signin" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Sign In</Link>
+                                : <button onClick={logout} className="btn btn-outline-primary  py-md-3 px-md-5 d-none d-lg-block">Logout {user?.firstName}</button>
+                            }
                         </div>
                     </nav>
                 </div>
