@@ -199,3 +199,100 @@ stack: ReferenceError: url is not defined
 [2024-07-29T09:40:02.982Z] app listening at http://localhost:8000
 [2024-07-29T09:40:03.196Z] Connection has been established successfully.
 >>>>>>> 4d1ecf4b1eb1bd1d73bf0ea878bbb13c23487720
+[2024-07-29T10:17:57.455Z] app listening at http://localhost:8000
+[2024-07-29T10:18:07.472Z] Unable to connect to the database: SequelizeConnectionError: connect ETIMEDOUT
+[2024-07-29T10:18:28.162Z] app listening at http://localhost:8000
+[2024-07-29T10:18:30.354Z] Connection has been established successfully.
+[2024-07-29T10:20:22.791Z] john.doe@example.com password1
+[2024-07-29T10:20:24.242Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:87:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-29T10:20:38.310Z] {
+status: fail,
+message: Invalid token,
+error: {
+  statusCode: 403,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid token
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:19:26
+    at module.exports [as verify] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/jsonwebtoken/verify.js:70:12)
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:18:7)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+}
+[2024-07-29T10:20:48.051Z] {
+status: fail,
+message: Invalid token,
+error: {
+  statusCode: 403,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid token
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:19:26
+    at module.exports [as verify] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/jsonwebtoken/verify.js:70:12)
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:18:7)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+}
+[2024-07-29T10:20:53.346Z] {
+status: fail,
+message: Invalid token,
+error: {
+  statusCode: 403,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid token
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:19:26
+    at module.exports [as verify] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/jsonwebtoken/verify.js:70:12)
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:18:7)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at param (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:376:14)
+}
+[2024-07-29T10:20:58.476Z] {
+status: fail,
+message: Invalid token,
+error: {
+  statusCode: 403,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid token
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:19:26
+    at module.exports [as verify] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/jsonwebtoken/verify.js:70:12)
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:18:7)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at param (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:376:14)
+}

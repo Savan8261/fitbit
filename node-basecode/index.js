@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const app = express();
 // donenv config
 require("dotenv").config();
@@ -23,7 +22,6 @@ scheduledLogFilesUpload();
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "src", "utils", "mailer", "templates"));
-
 
 app.use(
   cors({
