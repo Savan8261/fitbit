@@ -17,8 +17,8 @@ function Sidebar() {
             <div style={{ position: "", display: 'flex', height: '100vh', overflow: 'scroll initial' }} className='border border-end-1'>
                 <CDBSidebar textColor="black" backgroundColor="white">
                     <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large icon-blue"></i>}>
-                        {/* <h1 className="m-0 fs-6 text-dark text-uppercase">Fitbit</h1> */}
-                        <Logo />
+                        <h1 className="m-0 fs-2 text-dark text-uppercase">Fitbit</h1>
+
                     </CDBSidebarHeader>
 
                     <CDBSidebarContent className="sidebar-content">

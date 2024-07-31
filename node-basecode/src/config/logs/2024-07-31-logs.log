@@ -1,0 +1,127 @@
+[2024-07-31T05:00:34.980Z] app listening at http://localhost:8000
+[2024-07-31T05:00:35.337Z] Connection has been established successfully.
+[2024-07-31T06:14:29.894Z] app listening at http://localhost:8000
+[2024-07-31T06:14:33.726Z] Connection has been established successfully.
+[2024-07-31T06:14:49.222Z] basannofal04 admin@1213
+[2024-07-31T06:14:51.043Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:95:19)
+}
+[2024-07-31T06:14:56.104Z] basannofal04 admin@123
+[2024-07-31T06:15:04.794Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T06:33:04.955Z] app listening at http://localhost:8000
+[2024-07-31T06:33:07.194Z] basannofal04 admin@123
+[2024-07-31T06:33:14.188Z] Connection has been established successfully.
+[2024-07-31T06:33:20.910Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T06:36:42.745Z] app listening at http://localhost:8000
+[2024-07-31T06:36:43.678Z] Connection has been established successfully.
+[2024-07-31T06:36:44.333Z] basannofal04 admin@123
+[2024-07-31T06:37:02.819Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T06:37:14.264Z] app listening at http://localhost:8000
+[2024-07-31T06:37:16.956Z] Connection has been established successfully.
+[2024-07-31T06:37:30.872Z] basannofal04 admin@123z
+[2024-07-31T06:37:33.779Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:95:19)
+}
+[2024-07-31T06:37:43.857Z] basannofal04 admin@123
+[2024-07-31T06:37:48.499Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T06:37:48.500Z] error : Error
+[2024-07-31T06:37:48.500Z] message : Invalid login: 535 5.7.0 Invalid credentials
+[2024-07-31T06:37:48.502Z] stack : Error: Invalid login: 535 5.7.0 Invalid credentials
+    at SMTPConnection._formatError (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/nodemailer/lib/smtp-connection/index.js:798:19)
+    at SMTPConnection._actionAUTHComplete (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/nodemailer/lib/smtp-connection/index.js:1577:34)
+    at SMTPConnection.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/nodemailer/lib/smtp-connection/index.js:554:26)
+    at SMTPConnection._processResponse (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/nodemailer/lib/smtp-connection/index.js:982:20)
+    at SMTPConnection._onData (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/nodemailer/lib/smtp-connection/index.js:763:14)
+    at SMTPConnection._onSocketData (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+[2024-07-31T06:38:30.354Z] app listening at http://localhost:8000
+[2024-07-31T06:38:31.946Z] Connection has been established successfully.
+[2024-07-31T06:38:47.981Z] basannofal04 admin@1232
+[2024-07-31T06:38:49.318Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:95:19)
+}
+[2024-07-31T06:38:52.550Z] basannofal04 admin@1232
+[2024-07-31T06:38:52.873Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:95:19)
+}
+[2024-07-31T06:39:01.106Z] basannofal04 admin@1232
+[2024-07-31T06:39:01.870Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:95:19)
+}
+[2024-07-31T06:39:11.464Z] basannofal04 admin@123
+[2024-07-31T06:39:17.234Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T06:41:33.331Z] app listening at http://localhost:8000
+[2024-07-31T06:41:34.735Z] Connection has been established successfully.
+[2024-07-31T06:41:44.621Z] basannofal04 admin@123
+[2024-07-31T06:46:02.840Z] admin@gmail.com admin@123
+[2024-07-31T06:46:12.858Z] SequelizeConnectionError: connect ETIMEDOUT
+[2024-07-31T06:46:12.870Z] {
+status: error,
+message: connect ETIMEDOUT,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errorno: ETIMEDOUT,
+    code: ETIMEDOUT,
+    syscall: connect,
+    fatal: true
+    },
+  original: {
+    errorno: ETIMEDOUT,
+    code: ETIMEDOUT,
+    syscall: connect,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: connect ETIMEDOUT
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-07-31T06:46:40.021Z] basannofal04@gmail.com admin@123
+[2024-07-31T06:47:09.646Z] basannofal04 admin@123

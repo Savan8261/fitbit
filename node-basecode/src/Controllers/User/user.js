@@ -8,6 +8,21 @@ const config = require('../../config/config');
 const AppError = require("../../utils/appError");
 
 const AddUser = async (req, res, next) => {
+
+  const checkUsernameExist = await User.findOne({
+    where: {
+      username: req.body.username,
+    },
+  });
+  if (checkUsernameExist) {
+    if (req.file !== undefined) {
+      fs.unlinkSync(req.file.path);
+    }
+    return next(new AppError("Username already exist", 400));
+  }
+
+  console.log(checkUsernameExist)
+
   const checkEmailExist = await User.findOne({
     where: {
       email: req.body.email,
@@ -59,7 +74,7 @@ const AddUser = async (req, res, next) => {
 
   try {
     const user = await User.create(data);
-    res.status(200).json(user);
+    res.status(200).json({user});
   } catch (error) {
     next(error);
     console.log(error);

@@ -10,8 +10,12 @@ import TestimonialSection from "../components/Testimonial"
 import BlogSection from "../components/BlogSection"
 import ClassSchedule from "../components/ClassSchedule"
 import About from "../components/About"
+import { useContext } from "react"
+import { AuthContext } from "../context/AuthProvider"
 
 function Home() {
+    const { user, setUser } = useContext(AuthContext)
+
     return (
         <div>
             <Navigation />

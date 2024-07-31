@@ -1,6 +1,29 @@
+import { useContext, useEffect } from "react"
 import { Link } from "react-router-dom"
+import { AuthContext } from "../context/AuthProvider"
+import Cookies from 'js-cookie'
+import {jwtDecode} from 'jwt-decode'
 
 const Navigation = () => {
+    const { user, setUser } = useContext(AuthContext)
+
+    const logout = () => {
+        setUser(null);
+        Cookies.remove('token');
+    }
+
+
+    console.log(user)
+    useEffect(() => {
+        const token = Cookies.get('token');
+        if(token){
+            const decodedToken = jwtDecode(token);
+            const userID = decodedToken.id;
+            setUser(userID)
+        }        
+    }, [])
+    
+
     return (
         <div className="container-fluid bg-dark px-0">
             <div className="row gx-0">
@@ -64,7 +87,11 @@ const Navigation = () => {
                                 </div>
                                 <Link to="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <Link to="/signin" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</Link>
+                            {
+                                user == null ? 
+                                <Link to="/signin" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Sign In</Link>
+                                : <button onClick={logout} className="btn btn-outline-primary  py-md-3 px-md-5 d-none d-lg-block">Logout</button>
+                            }
                         </div>
                     </nav>
                 </div>
