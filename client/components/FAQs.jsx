@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Collapse, Card, Button } from "react-bootstrap";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const FAQs = () => {
   const [open, setOpen] = useState(null);
@@ -39,20 +44,28 @@ const FAQs = () => {
         <div className="accordion" id="faqAccordion">
           {faqs.map((faq) => (
             <Card key={faq.id} className="mb-3 border-dark shadow-lg">
-              <Card.Header className="bg-dark text-light rounded-top">
+              <Card.Header
+                style={{ backgroundColor: "#343a40", color: "#fff" }}
+                className="rounded-top"
+              >
                 <Button
-                  className="btn btn-link text-light w-100 text-start fs-5"
+                  className="btn btn-link text-light w-100 text-start fs-5 d-flex justify-content-between align-items-center"
                   onClick={() => handleToggle(faq.id)}
                   aria-expanded={open === faq.id}
                   aria-controls={`faq${faq.id}`}
+                  style={{ textDecoration: "none", background: "transparent" }}
                 >
                   {faq.question}
+                  <FontAwesomeIcon
+                    icon={open === faq.id ? faChevronDown : faChevronRight}
+                    style={{ transition: "transform 0.2s" }}
+                  />
                 </Button>
               </Card.Header>
               <Collapse in={open === faq.id}>
                 <Card.Body
                   id={`faq${faq.id}`}
-                  style={{ background: "#403c3c", color: "white" }}
+                  style={{ backgroundColor: "#495057", color: "#fff" }}
                 >
                   <p className="mb-0">{faq.answer}</p>
                 </Card.Body>

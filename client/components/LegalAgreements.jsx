@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Collapse, Card, Button } from "react-bootstrap";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const LegalAgreements = () => {
   const [open, setOpen] = useState(null);
@@ -41,20 +46,30 @@ const LegalAgreements = () => {
         <div className="accordion" id="legalAccordion">
           {legalAgreements.map((agreement) => (
             <Card key={agreement.id} className="mb-3 border-dark shadow-lg">
-              <Card.Header className="bg-dark text-light rounded-top">
+              <Card.Header
+                style={{ backgroundColor: "#343a40", color: "#fff" }}
+                className="rounded-top"
+              >
                 <Button
-                  className="btn btn-link text-light w-100 text-start fs-5"
+                  className="btn btn-link text-light w-100 text-start fs-5 d-flex justify-content-between align-items-center"
                   onClick={() => handleToggle(agreement.id)}
                   aria-expanded={open === agreement.id}
                   aria-controls={`agreement${agreement.id}`}
+                  style={{ textDecoration: "none", background: "transparent" }}
                 >
                   {agreement.title}
+                  <FontAwesomeIcon
+                    icon={
+                      open === agreement.id ? faChevronDown : faChevronRight
+                    }
+                    style={{ transition: "transform 0.2s" }}
+                  />
                 </Button>
               </Card.Header>
               <Collapse in={open === agreement.id}>
                 <Card.Body
                   id={`agreement${agreement.id}`}
-                  style={{ background: "#403c3c", color: "white" }}
+                  style={{ backgroundColor: "#495057", color: "#fff" }}
                 >
                   <p className="mb-0">{agreement.content}</p>
                 </Card.Body>

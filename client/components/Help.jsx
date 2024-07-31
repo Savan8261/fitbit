@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Collapse, Card, Button } from "react-bootstrap";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Help = () => {
   const [open, setOpen] = useState(null);
@@ -42,20 +47,28 @@ const Help = () => {
         <div className="accordion" id="helpAccordion">
           {helps.map((help) => (
             <Card key={help.id} className="mb-3 border-dark shadow-lg">
-              <Card.Header className="bg-dark text-light rounded-top">
+              <Card.Header
+                style={{ backgroundColor: "#343a40", color: "#fff" }}
+                className="rounded-top"
+              >
                 <Button
-                  className="btn btn-link text-light w-100 text-start fs-5"
+                  className="btn btn-link text-light w-100 text-start fs-5 d-flex justify-content-between align-items-center"
                   onClick={() => handleToggle(help.id)}
                   aria-expanded={open === help.id}
                   aria-controls={`help${help.id}`}
+                  style={{ textDecoration: "none", background: "transparent" }}
                 >
                   {help.title}
+                  <FontAwesomeIcon
+                    icon={open === help.id ? faChevronDown : faChevronRight}
+                    style={{ transition: "transform 0.2s" }}
+                  />
                 </Button>
               </Card.Header>
               <Collapse in={open === help.id}>
                 <Card.Body
                   id={`help${help.id}`}
-                  style={{ background: "#403c3c", color: "white" }}
+                  style={{ backgroundColor: "#495057", color: "#fff" }}
                 >
                   <p className="mb-2">{help.description}</p>
                   <a href={help.file} download className="btn btn-primary">
