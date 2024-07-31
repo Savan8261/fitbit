@@ -39,8 +39,10 @@ function Signin() {
                                           values
                                         );
                                         const token = response.data.token;
+                                        const user = response.data.user;
+
                                     
-                                        localStorage.setItem("token", token);
+                                        localStorage.setItem("user", JSON.stringify(user));
                                         setUser(response.data.user)
                                         Cookies.set('token', token, {
                                           expires: 7,
@@ -50,6 +52,7 @@ function Signin() {
                                         });
                                         navigate('/');
                                       } catch (error) {
+                                        console.log(error)
                                                     alert("Invalid credentials")
                                       }
                                 }}

@@ -1,15 +1,30 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../context/AuthProvider"
 import Cookies from 'js-cookie'
 
 const Navigation = () => {
     const { user, setUser } = useContext(AuthContext)
+
     const logout = () => {
         setUser(null);
-        localStorage.removeItem("token");
+        localStorage.removeItem("user");
         Cookies.remove('token');
     }
+
+
+    const checkUserExist = () => {
+        const userDetails = JSON.parse(localStorage.getItem('user'))
+        if(userDetails) {
+            setUser(userDetails)
+        }
+    }
+
+    useEffect(() => {
+        checkUserExist()
+    }, [])
+    
+
     return (
         <div className="container-fluid bg-dark px-0">
             <div className="row gx-0">
