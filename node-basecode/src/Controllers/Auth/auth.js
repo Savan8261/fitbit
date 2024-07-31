@@ -96,7 +96,7 @@ const AdminLogin = async (req, res, next) => {
     }
 
     // Generate JWT token
-    const token = jwt.sign({ email: user.email }, config.jwtSecret, {
+    const token = jwt.sign({ id: user.id }, config.jwtSecret, {
       expiresIn: config.jwtExpiry,
     });
 
