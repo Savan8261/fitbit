@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 const axiosInstance = axios.create({
   baseURL: process.env.VITE_SERVER_URL,
@@ -7,10 +7,12 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    const token = document.cookie.split('; ').find(row => row.startsWith('token='));
+    const token = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith("token="));
     if (token) {
-      const tokenValue = token.split('=')[1];
-      config.headers['Authorization'] = `Bearer ${tokenValue}`;
+      const tokenValue = token.split("=")[1];
+      config.headers["Authorization"] = `Bearer ${tokenValue}`;
     }
     return config;
   },
