@@ -1,83 +1,51 @@
-import React, { useState } from "react";
-import { Collapse, Card, Button } from "react-bootstrap";
-import Footer from "./Footer";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Navigation from "./Navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronDown,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import Footer from "./Footer";
 
 const LegalAgreements = () => {
-  const [open, setOpen] = useState(null);
+  const { id } = useParams();
+  const [agreement, setAgreement] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  const handleToggle = (index) => {
-    setOpen(open === index ? null : index);
-  };
+  //just a sample of string type which will be fetched from database (ex.agreement.content)
+  const content =
+    "<p><strong>Introduction</strong></p><p>[Your Company Name] (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [website URL], use our services, or interact with us. Please read this policy carefully to understand our views and practices regarding your personal data and how we will treat it.</p><p><strong>Information We Collect</strong></p><p>We may collect and process the following data about you:</p><ol><li><strong>Personal Identification Information:</strong> Name, email address, phone number, etc.</li><li><strong>Technical Data:</strong> IP address, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform, and other technology on the devices you use to access this website.</li><li><strong>Usage Data:</strong> Information about how you use our website, products, and services.</li><li><strong>Marketing and Communications Data:</strong> Your preferences in receiving marketing from us and your communication preferences.</li></ol><p><strong>How We Use Your Information</strong></p><p>We use the information we collect in the following ways:</p><ol><li><strong>To provide and maintain our service</strong>, including to monitor the usage of our service.</li><li><strong>To manage your account:</strong> to manage your registration as a user of the service.</li><li><strong>To contact you:</strong> To contact you by email, telephone calls, SMS, or other equivalent forms of electronic communication regarding updates or informative communications related to functionalities, products, or contracted services.</li></ol>";
 
-  const legalAgreements = [
-    {
-      id: 1,
-      title: "Privacy Policy",
-      content:
-        "This is the privacy policy content. It explains how user data is collected and used.",
-      type: "1", // 1: Privacy Policies
-    },
-    {
-      id: 2,
-      title: "Terms and Conditions",
-      content:
-        "These are the terms and conditions. They outline the rules and guidelines for using our service.",
-      type: "2", // 2: Terms & Conditions
-    },
-    {
-      id: 3,
-      title: "About Us",
-      content: "This section provides information about our company and team.",
-      type: "3", // 3: About Us
-    },
-  ];
-
+  useEffect(() => {
+    const fetchAgreement = async () => {
+      const localUrl = `http://localhost:8000/legalagreement/${id}`;
+      try {
+        const res = await fetch(localUrl);
+        const data = await res.json();
+        setAgreement(data);
+        console.log(data);
+      } catch (error) {
+        console.error(`Error fetching data: ${error}`);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchAgreement();
+  }, [id]);
   return (
     <div>
       <Navigation />
-      <div className="container my-5">
-        <h2 className="text-center mb-4">Legal Agreements</h2>
-        <div className="accordion" id="legalAccordion">
-          {legalAgreements.map((agreement) => (
-            <Card key={agreement.id} className="mb-3 border-dark shadow-lg">
-              <Card.Header
-                style={{ backgroundColor: "#343a40", color: "#fff" }}
-                className="rounded-top"
-              >
-                <Button
-                  className="btn btn-link text-light w-100 text-start fs-5 d-flex justify-content-between align-items-center"
-                  onClick={() => handleToggle(agreement.id)}
-                  aria-expanded={open === agreement.id}
-                  aria-controls={`agreement${agreement.id}`}
-                  style={{ textDecoration: "none", background: "transparent" }}
-                >
-                  {agreement.title}
-                  <FontAwesomeIcon
-                    icon={
-                      open === agreement.id ? faChevronDown : faChevronRight
-                    }
-                    style={{ transition: "transform 0.2s" }}
-                  />
-                </Button>
-              </Card.Header>
-              <Collapse in={open === agreement.id}>
-                <Card.Body
-                  id={`agreement${agreement.id}`}
-                  style={{ backgroundColor: "#495057", color: "#fff" }}
-                >
-                  <p className="mb-0">{agreement.content}</p>
-                </Card.Body>
-              </Collapse>
-            </Card>
-          ))}
+      {loading ? (
+        <p>Loading...</p>
+      ) : agreement ? (
+        <div>
+          <h2 className="text-center my-5">{agreement.title}</h2>
+          <div className="mx-5">
+            <p>
+              <strong>Last updated:</strong> {agreement.updatedAt}
+            </p>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
+          </div>
         </div>
-      </div>
+      ) : (
+        <p>No agreement found</p>
+      )}
       <Footer />
     </div>
   );
