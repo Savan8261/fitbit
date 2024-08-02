@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [agreements, setAgreements] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAgreements = async () => {
+      const localUrl = `http://localhost:8000/legalagreement`;
+      const deployedUrl = `https://fitbit-agxw.onrender.com/legalagreement`;
+      try {
+        const res = await fetch(localUrl);
+        const data = await res.json();
+        setAgreements(data);
+        console.log(data);
+      } catch (error) {
+        console.error(`Error fetching data: ${error}`);
+        setAgreements([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchAgreements();
+  }, []);
+
   return (
     <div>
       <div className="container-fluid bg-dark text-secondary px-5 mt-5">
@@ -84,21 +106,31 @@ const Footer = () => {
                   Popular Links
                 </h4>
                 <div className="d-flex flex-column justify-content-start">
-                  <Link className="text-secondary mb-2" to="/privacy-policy">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>
-                    Privacy Policy
-                  </Link>
-                  <Link
-                    className="text-secondary mb-2"
-                    to="/terms-and-conditions"
-                  >
-                    <i className="bi bi-arrow-right text-primary me-2"></i>Terms
-                    and Conditions
-                  </Link>
-                  <Link className="text-secondary mb-2" to="/about-us">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>
-                    About Us
-                  </Link>
+                  {loading ? (
+                    <p className="text-secondary mb-2">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Loading...
+                    </p>
+                  ) : (
+                    <>
+                      {agreements.length > 0 ? (
+                        agreements.map((agreement) => (
+                          <Link
+                            className="text-secondary mb-2"
+                            to={`/legal-agreement/${agreement.id}`}
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            {agreement.title}
+                          </Link>
+                        ))
+                      ) : (
+                        <p className="text-danger mb-2">
+                          <i className="bi bi-arrow-right text-danger me-2"></i>
+                          ! problem fetching policies !
+                        </p>
+                      )}{" "}
+                    </>
+                  )}
                   <Link className="text-secondary mb-2" to="/faqs">
                     <i className="bi bi-arrow-right text-primary me-2"></i>
                     FAQs

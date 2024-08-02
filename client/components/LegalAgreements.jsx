@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import { Spinner } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
-const PrivacyPolicy = () => {
-  const id = 1;
+function LegalAgreements() {
+  const { id } = useParams();
   const [agreement, setAgreement] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -48,6 +49,6 @@ const PrivacyPolicy = () => {
       <Footer />
     </div>
   );
-};
+}
 
-export default PrivacyPolicy;
+export default LegalAgreements;

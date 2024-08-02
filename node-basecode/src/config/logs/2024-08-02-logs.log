@@ -157,3 +157,7 @@ stack: SyntaxError: Unexpected token , in JSON at position 3103
     at endReadableNT (node:internal/streams/readable:1368:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 }
+[2024-08-02T07:10:12.860Z] app listening at http://localhost:8000
+[2024-08-02T07:10:14.149Z] Connection has been established successfully.
+[2024-08-02T07:16:30.700Z] app listening at http://localhost:8000
+[2024-08-02T07:16:31.436Z] Connection has been established successfully.
