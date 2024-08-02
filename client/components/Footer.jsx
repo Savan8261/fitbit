@@ -12,7 +12,7 @@ const Footer = () => {
       const deployedUrl = `https://fitbit-agxw.onrender.com/legalagreement`;
       try {
         setError(null);
-        const res = await fetch(localUrl);
+        const res = await fetch(deployedUrl);
         const data = await res.json();
         if (res.ok) {
           setAgreements(data);

@@ -6,9 +6,11 @@ import { Spinner } from "react-bootstrap";
 
 function LegalAgreements() {
   const { id } = useParams();
-  const [agreement, setAgreement] = useState([]);
+  const [agreement, setAgreement] = useState();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // console.log(typeof agreement);
 
   useEffect(() => {
     const fetchAgreement = async () => {
@@ -22,7 +24,6 @@ function LegalAgreements() {
         const data = await res.json();
         if (res.ok) {
           setAgreement(data);
-          console.log(data);
         } else {
           console.error("Error", ":", data);
           setError(data.message);
@@ -52,7 +53,7 @@ function LegalAgreements() {
             <h1 className="text-center text-danger my-5">{error}</h1>
           ) : (
             <>
-              {agreement.length > 0 && (
+              {agreement && (
                 <div>
                   <h2 className="text-center my-5">{agreement.title}</h2>
                   <div className="mx-5">
