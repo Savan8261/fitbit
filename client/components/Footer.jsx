@@ -84,15 +84,18 @@ const Footer = () => {
                   Popular Links
                 </h4>
                 <div className="d-flex flex-column justify-content-start">
-                  <Link className="text-secondary mb-2" to="/legalagreements/1">
+                  <Link className="text-secondary mb-2" to="/privacy-policy">
                     <i className="bi bi-arrow-right text-primary me-2"></i>
                     Privacy Policy
                   </Link>
-                  <Link className="text-secondary mb-2" to="/legalagreements/2">
+                  <Link
+                    className="text-secondary mb-2"
+                    to="/terms-and-conditions"
+                  >
                     <i className="bi bi-arrow-right text-primary me-2"></i>Terms
                     and Conditions
                   </Link>
-                  <Link className="text-secondary mb-2" to="/legalagreements/3">
+                  <Link className="text-secondary mb-2" to="/about-us">
                     <i className="bi bi-arrow-right text-primary me-2"></i>
                     About Us
                   </Link>

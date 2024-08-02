@@ -9,29 +9,29 @@ const Help = () => {
   const [helps, setHelps] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const helpss = [
-    {
-      id: 1,
-      title: "Getting Started",
-      description: "This guide helps you get started with the application.",
-      file: "path/to/getting-started.pdf",
-      file_type: 1, // e.g., 1 for PDF
-    },
-    {
-      id: 2,
-      title: "Frequently Asked Questions",
-      description: "Find answers to the most common questions here.",
-      file: "path/to/faq.pdf",
-      file_type: 1, // e.g., 1 for PDF
-    },
-    {
-      id: 3,
-      title: "Troubleshooting",
-      description: "Solutions for common issues you might encounter.",
-      file: "path/to/troubleshooting.pdf",
-      file_type: 1, // e.g., 1 for PDF
-    },
-  ];
+  // const helps = [
+  //   {
+  //     id: 1,
+  //     title: "Getting Started",
+  //     description: "This guide helps you get started with the application.",
+  //     file: "path/to/getting-started.pdf",
+  //     file_type: 1, // e.g., 1 for PDF
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Frequently Asked Questions",
+  //     description: "Find answers to the most common questions here.",
+  //     file: "path/to/faq.pdf",
+  //     file_type: 1, // e.g., 1 for PDF
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Troubleshooting",
+  //     description: "Solutions for common issues you might encounter.",
+  //     file: "path/to/troubleshooting.pdf",
+  //     file_type: 1, // e.g., 1 for PDF
+  //   },
+  // ];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,8 +40,7 @@ const Help = () => {
       try {
         const res = await fetch(localUrl);
         const data = await res.json();
-        // setHelps(data);
-        setHelps(helpss);
+        setHelps(data);
       } catch (error) {
         console.error(`Error fetching data: ${error}`);
       } finally {
@@ -65,7 +64,7 @@ const Help = () => {
             <div className="container my-5">
               <h2 className="text-center mb-4">Help Center</h2>
               <div>
-                {helpss.map((help) => (
+                {helps.map((help) => (
                   <div key={help.id} className="mb-4">
                     <h3>{help.title}</h3>
                     <p>{help.description}</p>

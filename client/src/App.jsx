@@ -15,7 +15,9 @@ import AdminAuthGuard from "./shared/guards/AdminAuthGuard";
 import "react-toastify/dist/ReactToastify.css";
 import FAQs from "../components/FAQs";
 import Help from "../components/Help";
-import LegalAgreements from "../components/LegalAgreements";
+import PrivacyPolicy from "../components/privacyPolicy";
+import TermsAndConditions from "../components/termsAndConditions";
+import AboutUs from "../components/aboutUs";
 
 function App() {
   return (
@@ -43,7 +45,9 @@ function App() {
               </AdminPageGuard>
             }
           />
-          <Route path="legalagreements/:id" element={<LegalAgreements />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="about-us" element={<AboutUs />} />
           <Route path="faqs" element={<FAQs />} />
           <Route path="help" element={<Help />} />
 
