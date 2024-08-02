@@ -13,10 +13,10 @@ const FAQs = () => {
   useEffect(() => {
     const fetchData = async () => {
       const localUrl = "http://localhost:8000/faqs";
-      // const deployedUrl = "https://fitbit-agxw.onrender.com/faqs";
+      const deployedUrl = "https://fitbit-agxw.onrender.com/faqs";
       try {
         setError(null);
-        const res = await fetch(localUrl);
+        const res = await fetch(deployedUrl);
         const data = await res.json();
         if (res.ok) {
           setFaqs(data);
