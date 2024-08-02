@@ -4,19 +4,25 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [agreements, setAgreements] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchAgreements = async () => {
       const localUrl = `http://localhost:8000/legalagreement`;
       const deployedUrl = `https://fitbit-agxw.onrender.com/legalagreement`;
       try {
+        setError(null);
         const res = await fetch(localUrl);
         const data = await res.json();
-        setAgreements(data);
-        console.log(data);
+        if (res.ok) {
+          setAgreements(data);
+        } else {
+          console.error("Error : ", data);
+          setError(data.message);
+        }
       } catch (error) {
-        console.error(`Error fetching data: ${error}`);
-        setAgreements([]);
+        console.error("Error : ", error);
+        setError(`Policies : ${error.message}`);
       } finally {
         setLoading(false);
       }
@@ -113,22 +119,32 @@ const Footer = () => {
                     </p>
                   ) : (
                     <>
-                      {agreements.length > 0 ? (
-                        agreements.map((agreement) => (
-                          <Link
-                            className="text-secondary mb-2"
-                            to={`/legal-agreement/${agreement.id}`}
-                          >
-                            <i className="bi bi-arrow-right text-primary me-2"></i>
-                            {agreement.title}
-                          </Link>
-                        ))
-                      ) : (
+                      {error ? (
                         <p className="text-danger mb-2">
                           <i className="bi bi-arrow-right text-danger me-2"></i>
-                          ! problem fetching policies !
+                          {error}
                         </p>
-                      )}{" "}
+                      ) : (
+                        <>
+                          {agreements.length > 0 ? (
+                            agreements.map((agreement) => (
+                              <Link
+                                className="text-secondary mb-2"
+                                to={`/legal-agreement/${agreement.id}`}
+                                key={agreement.id}
+                              >
+                                <i className="bi bi-arrow-right text-primary me-2"></i>
+                                {agreement.title}
+                              </Link>
+                            ))
+                          ) : (
+                            <p className="text-danger mb-2">
+                              <i className="bi bi-arrow-right text-danger me-2"></i>
+                              No polocies avalible
+                            </p>
+                          )}
+                        </>
+                      )}
                     </>
                   )}
                   <Link className="text-secondary mb-2" to="/faqs">

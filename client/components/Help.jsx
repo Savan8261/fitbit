@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Help = () => {
   const [helps, setHelps] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   // const helps = [
   //   {
@@ -38,11 +39,17 @@ const Help = () => {
       const localUrl = "http://localhost:8000/helps";
       // const deployedUrl = "https://fitbit-agxw.onrender.com/helps";
       try {
+        setError(null);
         const res = await fetch(localUrl);
         const data = await res.json();
-        setHelps(data);
+        if (res.ok) {
+          setHelps(data);
+        } else {
+          setError(data.message);
+        }
       } catch (error) {
-        console.error(`Error fetching data: ${error}`);
+        console.error("Error : ", error);
+        setError(error.message);
       } finally {
         setLoading(false);
       }
@@ -50,7 +57,6 @@ const Help = () => {
 
     fetchData();
   }, []);
-
   return (
     <div>
       <Navigation />
@@ -60,23 +66,33 @@ const Help = () => {
         </div>
       ) : (
         <>
-          {helps?.length > 0 ? (
-            <div className="container my-5">
-              <h2 className="text-center mb-4">Help Center</h2>
-              <div>
-                {helps.map((help) => (
-                  <div key={help.id} className="mb-4">
-                    <h3>{help.title}</h3>
-                    <p>{help.description}</p>
-                    <a href={help.file} download className="btn btn-primary">
-                      Download {help.file_type === 1 ? "PDF" : "File"}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
+          {error ? (
+            <h2 className="text-center mb-4 my-5 text-danger">{error}</h2>
           ) : (
-            <h2 className="text-center mb-4 my-5">No helps available.</h2>
+            <>
+              {helps?.length > 0 ? (
+                <div className="container my-5">
+                  <h2 className="text-center mb-4">Help Center</h2>
+                  <div>
+                    {helps.map((help) => (
+                      <div key={help.id} className="mb-4">
+                        <h3>{help.title}</h3>
+                        <p>{help.description}</p>
+                        <a
+                          href={help.file}
+                          download
+                          className="btn btn-primary"
+                        >
+                          Download {help.file_type === 1 ? "PDF" : "File"}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <h2 className="text-center mb-4 my-5">No helps available.</h2>
+              )}
+            </>
           )}
         </>
       )}
