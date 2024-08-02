@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [agreements, setAgreements] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchAgreements = async () => {
+      const localUrl = `http://localhost:8000/legalagreement`;
+      const deployedUrl = `https://fitbit-agxw.onrender.com/legalagreement`;
+      try {
+        setError(null);
+        const res = await fetch(localUrl);
+        const data = await res.json();
+        if (res.ok) {
+          setAgreements(data);
+        } else {
+          console.error("Error : ", data);
+          setError(data.message);
+        }
+      } catch (error) {
+        console.error("Error : ", error);
+        setError(`Policies : ${error.message}`);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchAgreements();
+  }, []);
+
   return (
     <div>
       <div className="container-fluid bg-dark text-secondary px-5 mt-5">
@@ -65,36 +93,6 @@ const Footer = () => {
                     <i className="bi bi-arrow-right text-primary me-2"></i>Class
                     Schedule
                   </Link>
-                  <Link className="text-secondary mb-2" to="/legal-agreements">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>
-                    Privacy & Policies
-                  </Link>
-                  <Link className="text-secondary mb-2" to="/faqs">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>
-                    FAQs
-                  </Link>
-                  <Link className="text-secondary" to="/help">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>
-                    Help
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                <h4 className="text-uppercase text-light mb-4">
-                  Popular Links
-                </h4>
-                <div className="d-flex flex-column justify-content-start">
-                  <Link className="text-secondary mb-2" to="#">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>Home
-                  </Link>
-                  <Link className="text-secondary mb-2" to="#">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>About
-                    Us
-                  </Link>
-                  <Link className="text-secondary mb-2" to="#">
-                    <i className="bi bi-arrow-right text-primary me-2"></i>Class
-                    Schedule
-                  </Link>
                   <Link className="text-secondary mb-2" to="#">
                     <i className="bi bi-arrow-right text-primary me-2"></i>Our
                     Trainers
@@ -106,6 +104,56 @@ const Footer = () => {
                   <Link className="text-secondary" to="#">
                     <i className="bi bi-arrow-right text-primary me-2"></i>
                     Contact Us
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <h4 className="text-uppercase text-light mb-4">
+                  Popular Links
+                </h4>
+                <div className="d-flex flex-column justify-content-start">
+                  {loading ? (
+                    <p className="text-secondary mb-2">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Loading...
+                    </p>
+                  ) : (
+                    <>
+                      {error ? (
+                        <p className="text-danger mb-2">
+                          <i className="bi bi-arrow-right text-danger me-2"></i>
+                          {error}
+                        </p>
+                      ) : (
+                        <>
+                          {agreements.length > 0 ? (
+                            agreements.map((agreement) => (
+                              <Link
+                                className="text-secondary mb-2"
+                                to={`/legal-agreement/${agreement.id}`}
+                                key={agreement.id}
+                              >
+                                <i className="bi bi-arrow-right text-primary me-2"></i>
+                                {agreement.title}
+                              </Link>
+                            ))
+                          ) : (
+                            <p className="text-danger mb-2">
+                              <i className="bi bi-arrow-right text-danger me-2"></i>
+                              No polocies avalible
+                            </p>
+                          )}
+                        </>
+                      )}
+                    </>
+                  )}
+                  <Link className="text-secondary mb-2" to="/faqs">
+                    <i className="bi bi-arrow-right text-primary me-2"></i>
+                    FAQs
+                  </Link>
+                  <Link className="text-secondary" to="/help">
+                    <i className="bi bi-arrow-right text-primary me-2"></i>
+                    Help
                   </Link>
                 </div>
               </div>
