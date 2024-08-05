@@ -1,0 +1,317 @@
+[2024-08-05T05:07:35.168Z] app listening at http://localhost:8000
+[2024-08-05T05:07:35.968Z] Connection has been established successfully.
+[2024-08-05T05:09:09.054Z] 1
+[2024-08-05T05:09:45.252Z] 2
+[2024-08-05T05:09:52.765Z] 2
+[2024-08-05T05:10:04.719Z] 2
+[2024-08-05T05:10:10.994Z] 2
+[2024-08-05T05:10:57.142Z] 5
+[2024-08-05T05:19:20.423Z] 1
+[2024-08-05T05:19:32.591Z] 2
+[2024-08-05T05:21:25.501Z] 1
+[2024-08-05T05:22:02.685Z] 5
+[2024-08-05T05:22:14.872Z] 5
+[2024-08-05T05:36:18.730Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:36:18.752Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:36:18.761Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:36:19.517Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:36:19.523Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:36:21.532Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:36:21.553Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:36:21.554Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:37:34.840Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:37:34.850Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:37:34.870Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:37:34.888Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:37:34.913Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:37:36.993Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:37:37.005Z] SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+[2024-08-05T05:37:37.014Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:37:37.054Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-05T05:37:37.066Z] {
+status: error,
+message: getaddrinfo EAI_AGAIN tailorg.com,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  original: {
+    errno: -3001,
+    code: EAI_AGAIN,
+    syscall: getaddrinfo,
+    hostname: tailorg.com,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}

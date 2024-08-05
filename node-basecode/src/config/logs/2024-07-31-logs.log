@@ -125,3 +125,690 @@ stack: SequelizeConnectionError: connect ETIMEDOUT
 }
 [2024-07-31T06:46:40.021Z] basannofal04@gmail.com admin@123
 [2024-07-31T06:47:09.646Z] basannofal04 admin@123
+[2024-07-31T10:09:23.695Z] app listening at http://localhost:8000
+[2024-07-31T10:09:24.185Z] Connection has been established successfully.
+[2024-07-31T10:59:14.914Z] app listening at http://localhost:8000
+[2024-07-31T10:59:15.136Z] Connection has been established successfully.
+[2024-07-31T10:59:24.171Z] 1
+[2024-07-31T10:59:39.009Z] app listening at http://localhost:8000
+[2024-07-31T10:59:39.300Z] Connection has been established successfully.
+[2024-07-31T11:00:25.459Z] 1
+[2024-07-31T11:00:40.934Z] 1
+[2024-07-31T11:00:44.362Z] 1
+[2024-07-31T11:01:12.034Z] 1
+[2024-07-31T11:01:27.029Z] 1
+[2024-07-31T11:01:39.333Z] 1
+[2024-07-31T11:01:54.519Z] 1
+[2024-07-31T11:02:03.085Z] 1
+[2024-07-31T11:03:21.968Z] 2
+[2024-07-31T11:03:25.780Z] 1
+[2024-07-31T11:03:36.715Z] 1
+[2024-07-31T11:03:44.538Z] 1
+[2024-07-31T11:03:56.675Z] 1
+[2024-07-31T11:04:16.372Z] 1
+[2024-07-31T11:04:22.887Z] 1
+[2024-07-31T11:04:34.668Z] 1
+[2024-07-31T11:04:40.925Z] 1
+[2024-07-31T11:04:43.706Z] 1
+[2024-07-31T11:04:51.528Z] 1
+[2024-07-31T11:05:05.947Z] 2
+[2024-07-31T11:06:10.502Z] 2
+[2024-07-31T11:06:48.848Z] 2
+[2024-07-31T11:07:13.375Z] 2
+[2024-07-31T11:07:35.397Z] 2
+[2024-07-31T11:07:49.407Z] 2
+[2024-07-31T11:08:04.391Z] 2
+[2024-07-31T11:08:09.409Z] 2
+[2024-07-31T11:08:18.402Z] 2
+[2024-07-31T11:09:15.421Z] 2
+[2024-07-31T11:09:58.036Z] 2
+[2024-07-31T11:10:21.062Z] 2
+[2024-07-31T11:10:25.023Z] 2
+[2024-07-31T11:10:46.443Z] 2
+[2024-07-31T11:11:02.326Z] 2
+[2024-07-31T11:11:09.854Z] 2
+[2024-07-31T11:11:12.244Z] 1
+[2024-07-31T11:11:51.420Z] 1
+[2024-07-31T11:12:02.176Z] 1
+[2024-07-31T11:12:07.901Z] 2
+[2024-07-31T11:12:23.674Z] 2
+[2024-07-31T11:12:27.561Z] 1
+[2024-07-31T11:12:47.245Z] 1
+[2024-07-31T11:34:01.215Z] app listening at http://localhost:8000
+[2024-07-31T11:34:02.484Z] Connection has been established successfully.
+[2024-07-31T11:35:00.392Z] app listening at http://localhost:8000
+[2024-07-31T11:35:00.840Z] Connection has been established successfully.
+[2024-07-31T11:36:27.775Z] app listening at http://localhost:8000
+[2024-07-31T11:36:28.156Z] Connection has been established successfully.
+[2024-07-31T11:38:05.861Z] app listening at http://localhost:8000
+[2024-07-31T11:38:06.105Z] Connection has been established successfully.
+[2024-07-31T11:46:39.324Z] app listening at http://localhost:8000
+[2024-07-31T11:46:39.673Z] Connection has been established successfully.
+[2024-07-31T11:46:53.339Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T11:47:37.241Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:47:37.242Z] error : ReferenceError
+[2024-07-31T11:47:37.242Z] message : AppError is not defined
+[2024-07-31T11:47:37.242Z] stack : ReferenceError: AppError is not defined
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:25)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+[2024-07-31T11:51:34.326Z] app listening at http://localhost:8000
+[2024-07-31T11:51:34.542Z] Connection has been established successfully.
+[2024-07-31T11:51:35.983Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:51:35.985Z] error : ReferenceError
+[2024-07-31T11:51:35.985Z] message : AppError is not defined
+[2024-07-31T11:51:35.985Z] stack : ReferenceError: AppError is not defined
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:25)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+[2024-07-31T11:51:45.109Z] app listening at http://localhost:8000
+[2024-07-31T11:51:45.330Z] Connection has been established successfully.
+[2024-07-31T11:51:48.566Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:51:48.567Z] error : ReferenceError
+[2024-07-31T11:51:48.567Z] message : AppError is not defined
+[2024-07-31T11:51:48.567Z] stack : ReferenceError: AppError is not defined
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:25)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+[2024-07-31T11:52:49.112Z] app listening at http://localhost:8000
+[2024-07-31T11:52:49.336Z] Connection has been established successfully.
+[2024-07-31T11:52:57.011Z] {
+status: fail,
+message: Please upload a file,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Please upload a file
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:9:21)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+}
+[2024-07-31T11:53:25.535Z] app listening at http://localhost:8000
+[2024-07-31T11:53:25.765Z] Connection has been established successfully.
+[2024-07-31T11:53:34.678Z] app listening at http://localhost:8000
+[2024-07-31T11:53:35.120Z] Connection has been established successfully.
+[2024-07-31T11:53:42.352Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:53:42.353Z] error : TypeError
+[2024-07-31T11:53:42.353Z] message : Cannot convert object to primitive value
+[2024-07-31T11:53:42.354Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T11:54:25.008Z] app listening at http://localhost:8000
+[2024-07-31T11:54:25.223Z] Connection has been established successfully.
+[2024-07-31T11:54:32.169Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:54:32.169Z] error : TypeError
+[2024-07-31T11:54:32.169Z] message : Cannot convert object to primitive value
+[2024-07-31T11:54:32.169Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T11:55:13.465Z] app listening at http://localhost:8000
+[2024-07-31T11:55:13.668Z] Connection has been established successfully.
+[2024-07-31T11:55:20.407Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:55:20.408Z] error : TypeError
+[2024-07-31T11:55:20.408Z] message : Cannot convert object to primitive value
+[2024-07-31T11:55:20.408Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T11:55:51.698Z] app listening at http://localhost:8000
+[2024-07-31T11:55:51.940Z] Connection has been established successfully.
+[2024-07-31T11:55:57.282Z] first
+[2024-07-31T11:55:57.283Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:55:57.283Z] error : TypeError
+[2024-07-31T11:55:57.283Z] message : Cannot convert object to primitive value
+[2024-07-31T11:55:57.283Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T11:56:05.522Z] app listening at http://localhost:8000
+[2024-07-31T11:56:05.788Z] Connection has been established successfully.
+[2024-07-31T11:56:07.101Z] first
+[2024-07-31T11:56:07.104Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:56:07.105Z] error : TypeError
+[2024-07-31T11:56:07.105Z] message : Cannot convert object to primitive value
+[2024-07-31T11:56:07.106Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T11:58:04.885Z] app listening at http://localhost:8000
+[2024-07-31T11:58:05.124Z] Connection has been established successfully.
+[2024-07-31T11:58:10.865Z] app listening at http://localhost:8000
+[2024-07-31T11:58:11.081Z] Connection has been established successfully.
+[2024-07-31T11:59:18.018Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T11:59:18.018Z] error : TypeError
+[2024-07-31T11:59:18.018Z] message : Cannot convert object to primitive value
+[2024-07-31T11:59:18.019Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:04:01.910Z] app listening at http://localhost:8000
+[2024-07-31T12:04:02.136Z] Connection has been established successfully.
+[2024-07-31T12:04:08.833Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:04:08.834Z] error : TypeError
+[2024-07-31T12:04:08.834Z] message : Cannot convert object to primitive value
+[2024-07-31T12:04:08.834Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:05:17.453Z] app listening at http://localhost:8000
+[2024-07-31T12:05:17.675Z] Connection has been established successfully.
+[2024-07-31T12:05:46.973Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:05:46.976Z] error : TypeError
+[2024-07-31T12:05:46.978Z] message : Cannot convert object to primitive value
+[2024-07-31T12:05:46.978Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:06:11.174Z] app listening at http://localhost:8000
+[2024-07-31T12:06:11.407Z] Connection has been established successfully.
+[2024-07-31T12:06:19.171Z] [object Object]
+[2024-07-31T12:06:19.185Z] {
+status: fail,
+message: Please upload a file,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Please upload a file
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:10:21)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+}
+[2024-07-31T12:07:40.278Z] app listening at http://localhost:8000
+[2024-07-31T12:07:40.485Z] Connection has been established successfully.
+[2024-07-31T12:08:05.099Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:08:05.100Z] error : TypeError
+[2024-07-31T12:08:05.100Z] message : Cannot convert object to primitive value
+[2024-07-31T12:08:05.100Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:11:22.739Z] app listening at http://localhost:8000
+[2024-07-31T12:11:22.925Z] Connection has been established successfully.
+[2024-07-31T12:12:52.658Z] app listening at http://localhost:8000
+[2024-07-31T12:12:52.850Z] Connection has been established successfully.
+[2024-07-31T12:12:59.742Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:12:59.742Z] error : TypeError
+[2024-07-31T12:12:59.742Z] message : Cannot convert object to primitive value
+[2024-07-31T12:12:59.742Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:13:31.770Z] app listening at http://localhost:8000
+[2024-07-31T12:13:31.982Z] Connection has been established successfully.
+[2024-07-31T12:13:36.678Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:13:36.678Z] error : TypeError
+[2024-07-31T12:13:36.678Z] message : Cannot convert object to primitive value
+[2024-07-31T12:13:36.679Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:13:48.866Z] app listening at http://localhost:8000
+[2024-07-31T12:13:49.060Z] Connection has been established successfully.
+[2024-07-31T12:13:51.739Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:13:51.740Z] error : TypeError
+[2024-07-31T12:13:51.740Z] message : Cannot convert object to primitive value
+[2024-07-31T12:13:51.740Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:15:02.460Z] app listening at http://localhost:8000
+[2024-07-31T12:15:03.680Z] Connection has been established successfully.
+[2024-07-31T12:15:37.076Z] app listening at http://localhost:8000
+[2024-07-31T12:15:37.307Z] Connection has been established successfully.
+[2024-07-31T12:15:58.592Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:15:58.592Z] error : TypeError
+[2024-07-31T12:15:58.593Z] message : Cannot convert object to primitive value
+[2024-07-31T12:15:58.594Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:18:34.937Z] app listening at http://localhost:8000
+[2024-07-31T12:18:35.241Z] Connection has been established successfully.
+[2024-07-31T12:18:50.381Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:18:50.381Z] error : TypeError
+[2024-07-31T12:18:50.381Z] message : Cannot convert object to primitive value
+[2024-07-31T12:18:50.382Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:20:46.934Z] app listening at http://localhost:8000
+[2024-07-31T12:20:47.134Z] Connection has been established successfully.
+[2024-07-31T12:21:40.087Z] app listening at http://localhost:8000
+[2024-07-31T12:21:40.299Z] Connection has been established successfully.
+[2024-07-31T12:21:47.296Z] app listening at http://localhost:8000
+[2024-07-31T12:21:47.511Z] Connection has been established successfully.
+[2024-07-31T12:21:51.878Z] [object Object]
+[2024-07-31T12:21:51.886Z] [object Object]
+[2024-07-31T12:21:51.907Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:21:51.909Z] error : TypeError
+[2024-07-31T12:21:51.909Z] message : Cannot convert object to primitive value
+[2024-07-31T12:21:51.910Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:23:24.927Z] app listening at http://localhost:8000
+[2024-07-31T12:23:25.132Z] Connection has been established successfully.
+[2024-07-31T12:23:26.606Z] [object Object]
+[2024-07-31T12:23:26.626Z] [object Object]
+[2024-07-31T12:23:26.650Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:23:26.651Z] error : TypeError
+[2024-07-31T12:23:26.651Z] message : Cannot convert object to primitive value
+[2024-07-31T12:23:26.652Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:23:57.145Z] app listening at http://localhost:8000
+[2024-07-31T12:23:57.315Z] Connection has been established successfully.
+[2024-07-31T12:24:08.967Z] app listening at http://localhost:8000
+[2024-07-31T12:24:09.139Z] Connection has been established successfully.
+[2024-07-31T12:24:16.411Z] {
+status: error,
+message: Unexpected field,
+error: {
+  name: MulterError,
+  message: Unexpected field,
+  code: LIMIT_UNEXPECTED_FILE,
+  field: logo,
+  storageErrors: {
+
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: MulterError: Unexpected field
+    at wrappedFileFilter (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/index.js:40:19)
+    at Multipart.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:394:37)
+    at feed (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/streamsearch/lib/sbmh.js:200:10)
+    at SBMH.push (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/streamsearch/lib/sbmh.js:104:16)
+    at Multipart._write (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+}
+[2024-07-31T12:24:54.711Z] app listening at http://localhost:8000
+[2024-07-31T12:24:54.910Z] Connection has been established successfully.
+[2024-07-31T12:24:58.549Z] app listening at http://localhost:8000
+[2024-07-31T12:24:58.735Z] Connection has been established successfully.
+[2024-07-31T12:25:16.484Z] app listening at http://localhost:8000
+[2024-07-31T12:25:16.715Z] Connection has been established successfully.
+[2024-07-31T12:25:23.555Z] [object Object]
+[2024-07-31T12:25:23.566Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:25:23.567Z] error : TypeError
+[2024-07-31T12:25:23.567Z] message : Cannot convert object to primitive value
+[2024-07-31T12:25:23.567Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:27:28.413Z] app listening at http://localhost:8000
+[2024-07-31T12:27:28.693Z] Connection has been established successfully.
+[2024-07-31T12:27:30.512Z] {
+status: error,
+message: Unexpected field,
+error: {
+  name: MulterError,
+  message: Unexpected field,
+  code: LIMIT_UNEXPECTED_FILE,
+  field: logo,
+  storageErrors: {
+
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: MulterError: Unexpected field
+    at wrappedFileFilter (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/index.js:40:19)
+    at Multipart.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:107:7)
+    at Multipart.emit (node:events:513:28)
+    at HeaderParser.cb (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:394:37)
+    at feed (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/streamsearch/lib/sbmh.js:248:10)
+    at SBMH.push (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/streamsearch/lib/sbmh.js:104:16)
+    at Multipart._write (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/busboy/lib/types/multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+}
+[2024-07-31T12:27:48.248Z] [object Object]
+[2024-07-31T12:27:48.263Z] 
+[2024-07-31T12:27:48.265Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:27:48.265Z] error : TypeError
+[2024-07-31T12:27:48.265Z] message : Cannot destructure property 'file' of 'req.files' as it is undefined.
+[2024-07-31T12:27:48.265Z] stack : TypeError: Cannot destructure property 'file' of 'req.files' as it is undefined.
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+[2024-07-31T12:28:08.572Z] app listening at http://localhost:8000
+[2024-07-31T12:28:08.827Z] Connection has been established successfully.
+[2024-07-31T12:28:10.510Z] [object Object]
+[2024-07-31T12:28:10.652Z] 
+[2024-07-31T12:28:10.653Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:28:10.653Z] error : TypeError
+[2024-07-31T12:28:10.654Z] message : Cannot destructure property 'file' of 'req.files' as it is undefined.
+[2024-07-31T12:28:10.654Z] stack : TypeError: Cannot destructure property 'file' of 'req.files' as it is undefined.
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+[2024-07-31T12:29:15.452Z] app listening at http://localhost:8000
+[2024-07-31T12:29:15.715Z] Connection has been established successfully.
+[2024-07-31T12:29:30.882Z] [object Object]
+[2024-07-31T12:29:30.934Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:29:30.934Z] error : TypeError
+[2024-07-31T12:29:30.934Z] message : Cannot convert object to primitive value
+[2024-07-31T12:29:30.935Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:30:13.718Z] app listening at http://localhost:8000
+[2024-07-31T12:30:13.942Z] Connection has been established successfully.
+[2024-07-31T12:30:14.932Z] [object Object]
+[2024-07-31T12:30:15.055Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:30:15.056Z] error : TypeError
+[2024-07-31T12:30:15.056Z] message : Cannot convert object to primitive value
+[2024-07-31T12:30:15.057Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:31:29.458Z] app listening at http://localhost:8000
+[2024-07-31T12:31:29.626Z] Connection has been established successfully.
+[2024-07-31T12:31:34.774Z] [object Object]
+[2024-07-31T12:31:34.786Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:31:34.787Z] error : TypeError
+[2024-07-31T12:31:34.787Z] message : Cannot convert object to primitive value
+[2024-07-31T12:31:34.788Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:34:20.135Z] app listening at http://localhost:8000
+[2024-07-31T12:34:20.395Z] Connection has been established successfully.
+[2024-07-31T12:34:28.303Z] [object Object]
+[2024-07-31T12:34:28.403Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:34:28.404Z] error : TypeError
+[2024-07-31T12:34:28.404Z] message : Cannot convert object to primitive value
+[2024-07-31T12:34:28.405Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:38:33.976Z] app listening at http://localhost:8000
+[2024-07-31T12:38:34.188Z] Connection has been established successfully.
+[2024-07-31T12:39:30.260Z] app listening at http://localhost:8000
+[2024-07-31T12:39:30.487Z] Connection has been established successfully.
+[2024-07-31T12:39:37.569Z] [object Object]
+[2024-07-31T12:39:37.668Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:39:37.670Z] error : TypeError
+[2024-07-31T12:39:37.670Z] message : Cannot convert object to primitive value
+[2024-07-31T12:39:37.680Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:40:12.248Z] app listening at http://localhost:8000
+[2024-07-31T12:40:12.493Z] Connection has been established successfully.
+[2024-07-31T12:44:52.164Z] [object Object]
+[2024-07-31T12:44:52.194Z] UNHANDLED REJECTION! Shutting down...
+[2024-07-31T12:44:52.195Z] error : TypeError
+[2024-07-31T12:44:52.196Z] message : Cannot convert object to primitive value
+[2024-07-31T12:44:52.197Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at AddExercise (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Exercise/Exercises.js:7:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-07-31T12:45:51.914Z] app listening at http://localhost:8000
+[2024-07-31T12:45:52.160Z] Connection has been established successfully.
+[2024-07-31T12:46:21.481Z] [object Object]
+[2024-07-31T12:46:21.572Z] {
+status: error,
+message: req is not defined,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: ReferenceError: req is not defined
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Routes/Exercise/Exercises.js:11:17
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+    at finish (node:internal/streams/writable:748:10)
+    at finishMaybe (node:internal/streams/writable:733:9)
+}
+[2024-07-31T12:46:49.286Z] app listening at http://localhost:8000
+[2024-07-31T12:46:49.524Z] Connection has been established successfully.
+[2024-07-31T12:46:58.408Z] app listening at http://localhost:8000
+[2024-07-31T12:46:58.641Z] Connection has been established successfully.

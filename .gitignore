@@ -5,6 +5,8 @@ node_modules
 node-basecode/src/config/Firebase/serviceAccountKey.json
 .env
 
+testing-panel
+
 # dependencies
 /node_modules
 /.pnp

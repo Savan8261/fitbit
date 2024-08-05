@@ -8,6 +8,7 @@ const LegalAgreement = require("./LegalAgreement/legalAgreement");
 const Helps = require("./Helps/helps");
 const Exercise = require("./Exercise/Exercises");
 const ExerciseCategory = require("./Exercise/ExerciseCateogry");
+const DietPlan = require("./DietPlan/dietPlan");
 
 router.use("/auth", auth);
 router.use("/user", user);
@@ -16,5 +17,6 @@ router.use("/legalagreement", LegalAgreement);
 router.use("/helps", Helps);
 router.use("/exercise", Exercise);
 router.use("/exercisecategory", ExerciseCategory);
+router.use("/dietplan", DietPlan);
 
 module.exports = router;

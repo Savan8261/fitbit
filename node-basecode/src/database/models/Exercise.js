@@ -42,6 +42,15 @@ module.exports = (sequelize, DataTypes) => {
       description: {
         type: DataTypes.TEXT,
       },
+      logo: {
+        type: DataTypes.STRING,
+      },
+      file: {
+        type: DataTypes.STRING,
+      },
+      type: {
+        type: DataTypes.TINYINT,
+      },
       setOfExercise: {
         type: DataTypes.STRING,
       },

@@ -47,7 +47,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       userId: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         validate: {
           isInt: {
             args: true,
@@ -58,7 +58,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      tableName: 'diet_plan',
+      tableName: 'diet_plans',
       modelName: 'DietPlan',
       timestamps: true,
       paranoid: true,
