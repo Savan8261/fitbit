@@ -27,6 +27,12 @@ const handleSequelizeForeignKeyConstraintError = (err) => {
   return new AppError(message, 404);
 };
 
+const handleSequelizeSequelizeConnectionError = (err) => {
+  const message = `Problem connecting to server, please check internet connection`;
+  console.log(err.message);
+  return new AppError(message, 404);
+};
+
 const sendErrorDev = (err, req, res) => {
   // A) API (send every error to help in development)
 
@@ -82,9 +88,14 @@ module.exports = (err, req, res, next) => {
     let error = { ...err };
     error.message = err.message;
     if (error.name === "CastError") error = handleCastErrorDB(error);
-    if (error.name === "SequelizeForeignKeyConstraintError")
+    if (error.name === "SequelizeForeignKeyConstraintError") {
       error = handleSequelizeForeignKeyConstraintError(error);
-    sendErrorProd(error, req, res);
+      sendErrorProd(error, req, res);
+    }
+    if (error.name === "SequelizeConnectionError") {
+      error = handleSequelizeSequelizeConnectionError(error);
+      sendErrorProd(error, req, res);
+    }
 
     sendErrorProd(error, req, res);
   }

@@ -125,6 +125,7 @@ stack: SequelizeConnectionError: connect ETIMEDOUT
 }
 [2024-07-31T06:46:40.021Z] basannofal04@gmail.com admin@123
 [2024-07-31T06:47:09.646Z] basannofal04 admin@123
+<<<<<<< HEAD
 [2024-07-31T10:09:23.695Z] app listening at http://localhost:8000
 [2024-07-31T10:09:24.185Z] Connection has been established successfully.
 [2024-07-31T10:59:14.914Z] app listening at http://localhost:8000
@@ -185,6 +186,15 @@ stack: SequelizeConnectionError: connect ETIMEDOUT
 [2024-07-31T11:46:39.324Z] app listening at http://localhost:8000
 [2024-07-31T11:46:39.673Z] Connection has been established successfully.
 [2024-07-31T11:46:53.339Z] {
+=======
+[2024-07-31T11:52:59.127Z] app listening at http://localhost:8000
+[2024-07-31T11:53:00.356Z] Connection has been established successfully.
+[2024-07-31T11:53:11.115Z] app listening at http://localhost:8000
+[2024-07-31T11:53:14.488Z] Connection has been established successfully.
+[2024-07-31T11:58:39.739Z] app listening at http://localhost:8000
+[2024-07-31T11:58:42.021Z] Connection has been established successfully.
+[2024-07-31T12:12:31.285Z] {
+>>>>>>> 86f3ea5afccab1fd0346837b64896f99ba4cf807
 status: fail,
 message: No token provided,
 error: {
@@ -193,6 +203,7 @@ error: {
   isOperational: true
   },
 stack: Error: No token provided
+<<<<<<< HEAD
     at authMiddleware (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/middlewares/authMiddleware.js:11:17)
     at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
     at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
@@ -583,10 +594,60 @@ error: {
   field: logo,
   storageErrors: {
 
+=======
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:12:31.295Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:12:51.415Z] {
+status: error,
+message: connect ETIMEDOUT,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errorno: ETIMEDOUT,
+    code: ETIMEDOUT,
+    syscall: connect,
+    fatal: true
+    },
+  original: {
+    errorno: ETIMEDOUT,
+    code: ETIMEDOUT,
+    syscall: connect,
+    fatal: true
+>>>>>>> 86f3ea5afccab1fd0346837b64896f99ba4cf807
     },
   statusCode: 500,
   status: error
   },
+<<<<<<< HEAD
 stack: MulterError: Unexpected field
     at wrappedFileFilter (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/index.js:40:19)
     at Multipart.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:107:7)
@@ -812,3 +873,150 @@ stack: ReferenceError: req is not defined
 [2024-07-31T12:46:49.524Z] Connection has been established successfully.
 [2024-07-31T12:46:58.408Z] app listening at http://localhost:8000
 [2024-07-31T12:46:58.641Z] Connection has been established successfully.
+=======
+stack: SequelizeConnectionError: connect ETIMEDOUT
+    at ConnectionManager.connect (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-07-31T12:24:29.084Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:24:29.098Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:25:49.668Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:25:49.688Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:26:05.474Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:26:42.026Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-31T12:26:42.030Z] {
+status: fail,
+message: No token provided,
+error: {
+  statusCode: 401,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: No token provided
+    at authMiddleware (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/middlewares/authMiddleware.js:11:17)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+>>>>>>> 86f3ea5afccab1fd0346837b64896f99ba4cf807
