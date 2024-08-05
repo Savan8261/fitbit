@@ -1,22 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": "fitbit123",
+    "password": "techuz123",
     "database": "fitbit",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "fitbit123",
+    "password": "techuz123",
     "database": "fitbit",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "fitbit123",
-    "database": "fitbit",
+    "password": "techuz123",
+    "database": "fitbit-prd",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

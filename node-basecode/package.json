@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js",
+    "migrate": "sequelize-cli db:migrate",
+    "migrate:undo": "sequelize-cli db:migrate:undo",
+    "migrate:undo:all": "sequelize-cli db:migrate:undo:all",
+    "seed:generate": "sequelize-cli seed:generate --name",
+    "seed": "sequelize-cli db:seed:all",
+    "seed:undo": "sequelize-cli db:seed:undo:all",
+    "recreate:database": "sequelize-cli db:migrate:undo:all && sequelize-cli db:migrate && sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +39,7 @@
     "sequelize": "^6.37.3"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4",
     "sequelize-cli": "^6.6.2"
   },
   "engines": {
