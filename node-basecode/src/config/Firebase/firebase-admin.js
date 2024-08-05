@@ -17,7 +17,7 @@ const serviceAccount = {
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: process.env.FIREBASE_URL || "fitbit-ca9f5.appspot.com",
+  storageBucket: process.env.FIREBASE_URL || "fit-bit-978b7.appspot.com",
 });
 
 const bucket = admin.storage().bucket();
