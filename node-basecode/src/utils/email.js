@@ -11,7 +11,8 @@ module.exports = class Email {
 
   newTransport() {
     return nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.ethereal.email",
+      port: 587,
       auth: {
         user: process.env.EMAIL_ORG_USER, //the organization's email id(gmail)
         pass: process.env.EMAIL_ORG_PASS, //the organization's password(gmail)
