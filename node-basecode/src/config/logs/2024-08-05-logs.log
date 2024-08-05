@@ -314,6 +314,7 @@ stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
     at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+<<<<<<< HEAD
 }
 [2024-08-05T06:07:05.462Z] 1
 [2024-08-05T06:07:31.164Z] 1
@@ -404,3 +405,6 @@ stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
 [2024-08-05T10:07:41.159Z] 1
 [2024-08-05T11:50:35.616Z] 1
 [2024-08-05T12:08:19.796Z] 1
+=======
+}
+>>>>>>> f5a28d8456ee95081082d612a308de5fecda49ca
