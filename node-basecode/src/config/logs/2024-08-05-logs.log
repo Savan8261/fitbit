@@ -392,3 +392,15 @@ stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
 [2024-08-05T07:22:08.955Z] app listening at http://localhost:8000
 [2024-08-05T07:22:09.545Z] Connection has been established successfully.
 [2024-08-05T07:22:18.734Z] basannofal04 admin@123
+[2024-08-05T07:33:03.600Z] basannofal04 admin@123
+[2024-08-05T08:25:44.232Z] basannofal04 admin@123
+[2024-08-05T08:40:19.387Z] basannofal04 admin@123
+[2024-08-05T08:58:12.956Z] 1
+[2024-08-05T09:08:04.639Z] basannofal04 admin@123
+[2024-08-05T10:02:39.547Z] basannofal04 admin@123
+[2024-08-05T10:07:06.169Z] 1
+[2024-08-05T10:07:13.736Z] 2
+[2024-08-05T10:07:25.867Z] 2
+[2024-08-05T10:07:41.159Z] 1
+[2024-08-05T11:50:35.616Z] 1
+[2024-08-05T12:08:19.796Z] 1
