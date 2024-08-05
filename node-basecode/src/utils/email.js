@@ -11,12 +11,11 @@ module.exports = class Email {
 
   newTransport() {
     return nodemailer.createTransport({
-      host: "sandbox.smtp.mailtrap.io",
-      port: 465,
-      secure: false,
+      host: "smtp.ethereal.email",
+      port: 587,
       auth: {
-        user: "9abc5698d0f070",
-        pass: "8a6e2a50f0bbc3",
+        user: process.env.EMAIL_ORG_USER, //the organization's email id(gmail)
+        pass: process.env.EMAIL_ORG_PASS, //the organization's password(gmail)
       },
     });
   }
