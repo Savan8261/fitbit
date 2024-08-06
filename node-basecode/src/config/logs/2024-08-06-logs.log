@@ -1,0 +1,17 @@
+[2024-08-06T12:49:34.271Z] app listening at http://localhost:8000
+[2024-08-06T12:49:34.346Z] Connection has been established successfully.
+[2024-08-06T12:49:48.732Z] savan@techuz.com savan1234
+[2024-08-06T12:49:48.779Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/Auth/auth.js:81:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-08-06T12:49:59.527Z] 
+[2024-08-06T12:50:09.107Z] savan@techuz.com savan1234
