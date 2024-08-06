@@ -95,7 +95,7 @@ const AdminLogin = async (req, res, next) => {
     });
 
     // Send welcome email
-    new Email(user).sendWelcome();
+    // new Email(user).sendWelcome();
 
     res.status(200).json({ token, user });
   } catch (err) {

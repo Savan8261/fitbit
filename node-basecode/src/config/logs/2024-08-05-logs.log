@@ -314,6 +314,7 @@ stack: SequelizeConnectionError: getaddrinfo EAI_AGAIN tailorg.com
     at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+<<<<<<< HEAD
 }
 [2024-08-05T07:27:13.489Z] app listening at http://localhost:8000
 [2024-08-05T07:27:15.511Z] Connection has been established successfully.
@@ -549,3 +550,6 @@ stack: Error: Invalid credentials
 [2024-08-05T13:35:18.876Z] app listening at http://localhost:8000
 [2024-08-05T13:35:19.611Z] Connection has been established successfully.
 [2024-08-05T13:35:33.638Z] savan@techuz.com savan1234
+=======
+}
+>>>>>>> 1096d3c8815e08374ef156a6bc978b25119522de
