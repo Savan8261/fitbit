@@ -1,0 +1,22 @@
+[2024-08-06T05:19:13.421Z] app listening at http://localhost:8000
+[2024-08-06T05:19:18.396Z] Connection has been established successfully.
+[2024-08-06T05:19:44.487Z] 1
+[2024-08-06T05:25:16.275Z] basannofal04 admin@123
+[2024-08-06T06:58:52.730Z] {
+status: fail,
+message: Username already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Username already exist
+    at AddUser (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/User/user.js:21:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-08-06T06:59:22.689Z] 
+[2024-08-06T06:59:37.571Z] nofalbasan04 admin@123
+[2024-08-06T07:04:43.809Z] app listening at http://localhost:8000
+[2024-08-06T07:04:44.012Z] Connection has been established successfully.
+[2024-08-06T07:05:58.019Z] basannofal04 admin@123
+[2024-08-06T07:06:40.927Z] 1
